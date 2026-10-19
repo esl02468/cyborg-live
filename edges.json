@@ -1,0 +1,8188 @@
+{
+"generated": "2026-10-18 21:10:01",
+"generated_ts": 1792372201.464384,
+"totals": {
+"tested": 48502619,
+"runs": 163,
+"k_passers": 47,
+"candidates": 0,
+"leads": 0,
+"updated": "2026-10-18 20:48"
+},
+"rules": {
+"discovery_end": "2025-10-01",
+"stage1": {
+"n": 60,
+"mean": 20.0,
+"p": 0.0005,
+"wf": 4
+},
+"stage2": {
+"n": 30,
+"mean": 20.0,
+"alpha": 0.05
+},
+"horizons": [
+15,
+30,
+60,
+120,
+0
+],
+"kinds": [
+"orb",
+"donch",
+"rsi",
+"boll",
+"ema",
+"move",
+"pdhl",
+"gap",
+"tod",
+"vwap"
+],
+"cool_days": 7
+},
+"passers": [
+{
+"k": 2,
+"key": "2ffb997e43fc",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ pdhl(pad=0.25, mode=fade) 10:30-13:00 [dow=0] stop 2 ATR, target 1 ATR, flat 15:55",
+"root": "MNQ",
+"found": "2026-10-16 14:21",
+"kind": "pdhl",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "pdhl",
+"pad": 0.25,
+"mode": "fade",
+"t_from": 630,
+"t_to": 780,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": 0,
+"stop": 2,
+"tgt": 1,
+"flat": 955,
+"hold": 0
+},
+"disc": {
+"n": 60,
+"mean": 35.57407906103559,
+"t": 4.000368722924603,
+"p": 3.162193193431231e-05,
+"win": 0.8333333333333334,
+"wf": 5,
+"coin": -15.049189337232814
+},
+"hold": {
+"n": 39,
+"mean": -16.977805000302478,
+"t": -0.83593994575212,
+"p": 0.7984056556827408,
+"win": 0.6153846153846154,
+"wf": 3,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.025
+},
+{
+"k": 4,
+"key": "0125efc6e46b",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ donch(n=48, mode=break) 10:00-13:00 [dow=4] stop 3 ATR, target 1.5 ATR, flat 13:00, hold 60m",
+"root": "MNQ",
+"found": "2026-10-16 14:21",
+"kind": "donch",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "donch",
+"n": 48,
+"mode": "break",
+"t_from": 600,
+"t_to": 780,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": 4,
+"stop": 3,
+"tgt": 1.5,
+"flat": 780,
+"hold": 60
+},
+"disc": {
+"n": 78,
+"mean": 35.14854536489151,
+"t": 3.5910705082264247,
+"p": 0.00016466126059983937,
+"win": 0.7692307692307693,
+"wf": 5,
+"coin": -1.356723888812442
+},
+"hold": {
+"n": 42,
+"mean": -22.315675266762224,
+"t": -0.9167196685840129,
+"p": 0.8203552216299881,
+"win": 0.5476190476190477,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.0125
+},
+{
+"k": 5,
+"key": "677499ab5b76",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ move(L=4, k=1.5, mode=chase) 10:00-10:30 [trend=with, dow=4] stop 0.75 ATR, target 0.5 ATR, flat 15:55",
+"root": "NQ",
+"found": "2026-10-16 14:21",
+"kind": "move",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "move",
+"L": 4,
+"k": 1.5,
+"mode": "chase",
+"t_from": 600,
+"t_to": 630,
+"trend": "with",
+"prev": "any",
+"atrq": "any",
+"dow": 4,
+"stop": 0.75,
+"tgt": 0.5,
+"flat": 955,
+"hold": 0
+},
+"disc": {
+"n": 64,
+"mean": 140.48840586799344,
+"t": 3.7413513471621354,
+"p": 9.151671387849719e-05,
+"win": 0.796875,
+"wf": 4,
+"coin": -141.5015163796959
+},
+"hold": {
+"n": 34,
+"mean": 98.50076715607011,
+"t": 1.1373977703851266,
+"p": 0.1276860194743683,
+"win": 0.6764705882352942,
+"wf": 4,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.01
+},
+{
+"k": 7,
+"key": "5aca20635239",
+"verdict": "FAILED HOLDOUT",
+"text": "GC donch(n=12, mode=fade) 11:30-13:00 [trend=with, prev=down] stop 3 ATR, target 1.5 ATR, flat 15:55, hold 120m",
+"root": "MGC",
+"found": "2026-10-16 14:21",
+"kind": "donch",
+"base": "GC",
+"spec": {
+"base": "GC",
+"kind": "donch",
+"n": 12,
+"mode": "fade",
+"t_from": 690,
+"t_to": 780,
+"trend": "with",
+"prev": "down",
+"atrq": "any",
+"dow": "any",
+"stop": 3,
+"tgt": 1.5,
+"flat": 955,
+"hold": 120
+},
+"disc": {
+"n": 60,
+"mean": 21.350483396385112,
+"t": 4.717150679974664,
+"p": 1.195852795510152e-06,
+"win": 0.8333333333333334,
+"wf": 5,
+"coin": -10.643106347204641
+},
+"hold": {
+"n": 45,
+"mean": -20.358407871199343,
+"t": -1.1043129984591675,
+"p": 0.8652713069133018,
+"win": 0.5111111111111111,
+"wf": 1,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.0071428571428571435
+},
+{
+"k": 8,
+"key": "a6f0fb40db9d",
+"verdict": "FAILED HOLDOUT",
+"text": "RTY orb(minutes=5, pad=0, mode=break) 10:30-11:30 [trend=against, prev=opp] stop 3 ATR, target 2 ATR, flat 13:00, hold 30m",
+"root": "RTY",
+"found": "2026-10-16 14:21",
+"kind": "orb",
+"base": "RTY",
+"spec": {
+"base": "RTY",
+"kind": "orb",
+"minutes": 5,
+"pad": 0,
+"mode": "break",
+"t_from": 630,
+"t_to": 690,
+"trend": "against",
+"prev": "opp",
+"atrq": "any",
+"dow": "any",
+"stop": 3,
+"tgt": 2,
+"flat": 780,
+"hold": 30
+},
+"disc": {
+"n": 65,
+"mean": 128.49793587450426,
+"t": 3.7572381097690073,
+"p": 8.589950559231591e-05,
+"win": 0.7076923076923077,
+"wf": 4,
+"coin": -61.72849869271733
+},
+"hold": {
+"n": 26,
+"mean": 11.366244667677865,
+"t": 0.15588363826307022,
+"p": 0.4380623712079314,
+"win": 0.5384615384615384,
+"wf": 4,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.00625
+},
+{
+"k": 10,
+"key": "ad6916957741",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ tod(at=630, mode=with) [trend=against] stop 1.5 ATR, target 1.5 ATR, flat 15:55, hold 120m",
+"root": "MNQ",
+"found": "2026-10-16 14:42",
+"kind": "tod",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "tod",
+"at": 630,
+"mode": "with",
+"t_from": 630,
+"t_to": 950,
+"trend": "against",
+"prev": "any",
+"atrq": "any",
+"dow": "any",
+"stop": 1.5,
+"tgt": 1.5,
+"flat": 955,
+"hold": 120
+},
+"disc": {
+"n": 85,
+"mean": 34.50006310379088,
+"t": 3.8183123315868626,
+"p": 6.718387160210066e-05,
+"win": 0.7294117647058823,
+"wf": 5,
+"coin": 9.154693220596089
+},
+"hold": {
+"n": 54,
+"mean": -8.552013746654799,
+"t": -0.5337080604752824,
+"p": 0.703228234222185,
+"win": 0.5555555555555556,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.005
+},
+{
+"k": 11,
+"key": "dfb619991f4c",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ rsi(n=9, lo=25, mode=break) 11:30-13:00 stop 1.5 ATR, target 0.75 ATR, flat 15:00",
+"root": "NQ",
+"found": "2026-10-16 14:42",
+"kind": "rsi",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "rsi",
+"n": 9,
+"lo": 25,
+"mode": "break",
+"t_from": 690,
+"t_to": 780,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": "any",
+"stop": 1.5,
+"tgt": 0.75,
+"flat": 900,
+"hold": 0
+},
+"disc": {
+"n": 157,
+"mean": 198.1007062313881,
+"t": 4.059146401565782,
+"p": 2.4626214182620266e-05,
+"win": 0.802547770700637,
+"wf": 5,
+"coin": 41.79926086147146
+},
+"hold": {
+"n": 92,
+"mean": -85.92466113451988,
+"t": -0.9373649741792562,
+"p": 0.8257145743071246,
+"win": 0.6195652173913043,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.004545454545454546
+},
+{
+"k": 12,
+"key": "0b15cc2396de",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ orb(minutes=10, pad=0.1, mode=break) 10:00-15:00 [trend=with, dow=2] stop 1 ATR, target 0.75 ATR, flat 15:55",
+"root": "NQ",
+"found": "2026-10-16 14:42",
+"kind": "orb",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "orb",
+"minutes": 10,
+"pad": 0.1,
+"mode": "break",
+"t_from": 600,
+"t_to": 900,
+"trend": "with",
+"prev": "any",
+"atrq": "any",
+"dow": 2,
+"stop": 1,
+"tgt": 0.75,
+"flat": 955,
+"hold": 0
+},
+"disc": {
+"n": 87,
+"mean": 190.40771441202477,
+"t": 3.971001232465367,
+"p": 3.5785604498862896e-05,
+"win": 0.7701149425287356,
+"wf": 5,
+"coin": 59.86836870026524
+},
+"hold": {
+"n": 53,
+"mean": 91.03912675374939,
+"t": 0.9643610939282645,
+"p": 0.16743246043229212,
+"win": 0.6226415094339622,
+"wf": 3,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.004166666666666667
+},
+{
+"k": 13,
+"key": "8d70ec869137",
+"verdict": "FAILED HOLDOUT",
+"text": "RTY gap(k=0.5, mode=fade) [trend=against, dow=2] stop 3 ATR, target 3 ATR, flat 15:00, hold 30m",
+"root": "RTY",
+"found": "2026-10-16 14:42",
+"kind": "gap",
+"base": "RTY",
+"spec": {
+"base": "RTY",
+"kind": "gap",
+"k": 0.5,
+"mode": "fade",
+"t_from": 630,
+"t_to": 690,
+"trend": "against",
+"prev": "any",
+"atrq": "any",
+"dow": 2,
+"stop": 3,
+"tgt": 3,
+"flat": 900,
+"hold": 30
+},
+"disc": {
+"n": 70,
+"mean": 155.1895604395625,
+"t": 3.55478172272153,
+"p": 0.0001891464996106436,
+"win": 0.6571428571428571,
+"wf": 4,
+"coin": -75.34890109889847
+},
+"hold": {
+"n": 38,
+"mean": -9.631578947364732,
+"t": -0.12727940304769786,
+"p": 0.5506403691508538,
+"win": 0.5,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.0038461538461538464
+},
+{
+"k": 15,
+"key": "41775a125ba1",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ ema(fast=5, slow=34, mode=follow) 10:00-10:30 [prev=up] stop 2 ATR, target 2 ATR, flat 11:30, hold 15m",
+"root": "MNQ",
+"found": "2026-10-16 15:50",
+"kind": "ema",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "ema",
+"fast": 5,
+"slow": 34,
+"mode": "follow",
+"t_from": 600,
+"t_to": 630,
+"trend": "any",
+"prev": "up",
+"atrq": "any",
+"dow": "any",
+"stop": 2,
+"tgt": 2,
+"flat": 690,
+"hold": 15
+},
+"disc": {
+"n": 85,
+"mean": 25.353579571363426,
+"t": 3.561939890685402,
+"p": 0.00018406233919723792,
+"win": 0.6705882352941176,
+"wf": 5,
+"coin": -10.488351047037778
+},
+"hold": {
+"n": 35,
+"mean": 10.14835164835165,
+"t": 0.5038149034345919,
+"p": 0.3071957268854233,
+"win": 0.5714285714285714,
+"wf": 4,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.0033333333333333335
+},
+{
+"k": 16,
+"key": "c558b74c4036",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ move(L=6, k=3, mode=chase) 10:00-10:30 [atrq=high] stop 1 ATR, target 0.75 ATR, flat 15:55, hold 15m",
+"root": "MNQ",
+"found": "2026-10-16 15:50",
+"kind": "move",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "move",
+"L": 6,
+"k": 3,
+"mode": "chase",
+"t_from": 600,
+"t_to": 630,
+"trend": "any",
+"prev": "any",
+"atrq": "high",
+"dow": "any",
+"stop": 1,
+"tgt": 0.75,
+"flat": 955,
+"hold": 15
+},
+"disc": {
+"n": 95,
+"mean": 22.26945554445554,
+"t": 4.203631114061428,
+"p": 1.3133344257486632e-05,
+"win": 0.7368421052631579,
+"wf": 4,
+"coin": 0.7836255849413748
+},
+"hold": {
+"n": 81,
+"mean": -8.465154904116893,
+"t": -0.8886787160248553,
+"p": 0.8129121135217119,
+"win": 0.5432098765432098,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.003125
+},
+{
+"k": 17,
+"key": "0cef187668b2",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ boll(n=20, k=1.5, mode=break) 11:30-13:00 [prev=same] stop 1.5 ATR, target 0.75 ATR, flat 13:00, hold 15m",
+"root": "NQ",
+"found": "2026-10-16 15:50",
+"kind": "boll",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "boll",
+"n": 20,
+"k": 1.5,
+"mode": "break",
+"t_from": 690,
+"t_to": 780,
+"trend": "any",
+"prev": "same",
+"atrq": "any",
+"dow": "any",
+"stop": 1.5,
+"tgt": 0.75,
+"flat": 780,
+"hold": 15
+},
+"disc": {
+"n": 254,
+"mean": 83.08310085225793,
+"t": 3.413880632419998,
+"p": 0.0003202231433820123,
+"win": 0.6535433070866141,
+"wf": 5,
+"coin": -4.955548204691343
+},
+"hold": {
+"n": 152,
+"mean": 3.402360876012659,
+"t": 0.06516757950285847,
+"p": 0.4740202870239274,
+"win": 0.5657894736842105,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.0029411764705882353
+},
+{
+"k": 18,
+"key": "4722ab16d9ce",
+"verdict": "FAILED HOLDOUT",
+"text": "RTY ema(fast=20, slow=21, mode=follow) 10:00-15:50 [dow=1] stop 3 ATR, target 1.5 ATR, flat 15:00, hold 60m",
+"root": "RTY",
+"found": "2026-10-16 15:50",
+"kind": "ema",
+"base": "RTY",
+"spec": {
+"base": "RTY",
+"kind": "ema",
+"fast": 20,
+"slow": 21,
+"mode": "follow",
+"t_from": 600,
+"t_to": 950,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": 1,
+"stop": 3,
+"tgt": 1.5,
+"flat": 900,
+"hold": 60
+},
+"disc": {
+"n": 75,
+"mean": 118.4022063208128,
+"t": 4.4072043019085365,
+"p": 5.235670515052892e-06,
+"win": 0.7733333333333333,
+"wf": 5,
+"coin": 36.18995229576837
+},
+"hold": {
+"n": 44,
+"mean": -54.8426370141473,
+"t": -1.023615262789442,
+"p": 0.846991483362832,
+"win": 0.5454545454545454,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.002777777777777778
+},
+{
+"k": 19,
+"key": "0268c53b5dff",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ rsi(n=21, lo=30, mode=break) 10:00-13:00 [atrq=high] stop 2 ATR, target 1 ATR, flat 15:55, hold 15m",
+"root": "MNQ",
+"found": "2026-10-16 16:32",
+"kind": "rsi",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "rsi",
+"n": 21,
+"lo": 30,
+"mode": "break",
+"t_from": 600,
+"t_to": 780,
+"trend": "any",
+"prev": "any",
+"atrq": "high",
+"dow": "any",
+"stop": 2,
+"tgt": 1,
+"flat": 955,
+"hold": 15
+},
+"disc": {
+"n": 94,
+"mean": 24.868998908892532,
+"t": 3.3407147553789103,
+"p": 0.0004178151336702568,
+"win": 0.6808510638297872,
+"wf": 5,
+"coin": 1.4509001636661178
+},
+"hold": {
+"n": 61,
+"mean": -14.31683480453972,
+"t": -0.9660098491205357,
+"p": 0.8329803736667681,
+"win": 0.5409836065573771,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.002631578947368421
+},
+{
+"k": 20,
+"key": "2959f011203a",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ gap(k=1, mode=fade) [dow=3] stop 1 ATR, target 1 ATR, flat 15:55, hold 15m",
+"root": "NQ",
+"found": "2026-10-16 16:55",
+"kind": "gap",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "gap",
+"k": 1,
+"mode": "fade",
+"t_from": 780,
+"t_to": 900,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": 3,
+"stop": 1,
+"tgt": 1,
+"flat": 955,
+"hold": 15
+},
+"disc": {
+"n": 71,
+"mean": 208.4681361352633,
+"t": 3.3531057042753796,
+"p": 0.00039955090839165485,
+"win": 0.676056338028169,
+"wf": 4,
+"coin": -82.62251030749584
+},
+"hold": {
+"n": 45,
+"mean": 136.7991452991453,
+"t": 1.0380514022006821,
+"p": 0.1496230624468394,
+"win": 0.6222222222222222,
+"wf": 4,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.0025
+},
+{
+"k": 21,
+"key": "f8ee55967463",
+"verdict": "FAILED HOLDOUT",
+"text": "ES ema(fast=5, slow=21, mode=follow) 10:00-15:50 [trend=against, dow=2] stop 1.5 ATR, target 0.75 ATR, flat 15:55, hold 120m",
+"root": "ES",
+"found": "2026-10-16 16:55",
+"kind": "ema",
+"base": "ES",
+"spec": {
+"base": "ES",
+"kind": "ema",
+"fast": 5,
+"slow": 21,
+"mode": "follow",
+"t_from": 600,
+"t_to": 950,
+"trend": "against",
+"prev": "any",
+"atrq": "any",
+"dow": 2,
+"stop": 1.5,
+"tgt": 0.75,
+"flat": 955,
+"hold": 120
+},
+"disc": {
+"n": 69,
+"mean": 113.22806156179513,
+"t": 4.463315108401499,
+"p": 4.0350618373552635e-06,
+"win": 0.8695652173913043,
+"wf": 5,
+"coin": 15.523949340177856
+},
+"hold": {
+"n": 40,
+"mean": 21.51660330948122,
+"t": 0.3452623979643012,
+"p": 0.3649485563011954,
+"win": 0.75,
+"wf": 3,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.002380952380952381
+},
+{
+"k": 22,
+"key": "de4df709d62e",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ boll(n=10, k=1.5, mode=fade) 11:30-15:00 [dow=1] stop 1.5 ATR, target 1.5 ATR, flat 13:00, hold 15m",
+"root": "NQ",
+"found": "2026-10-16 17:18",
+"kind": "boll",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "boll",
+"n": 10,
+"k": 1.5,
+"mode": "fade",
+"t_from": 690,
+"t_to": 900,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": 1,
+"stop": 1.5,
+"tgt": 1.5,
+"flat": 780,
+"hold": 15
+},
+"disc": {
+"n": 92,
+"mean": 178.98436163179585,
+"t": 3.51444836924248,
+"p": 0.000220334162962114,
+"win": 0.6739130434782609,
+"wf": 5,
+"coin": -76.50049097767754
+},
+"hold": {
+"n": 54,
+"mean": -171.4872623070298,
+"t": -1.8533996974684523,
+"p": 0.9680874546656345,
+"win": 0.37037037037037035,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.002272727272727273
+},
+{
+"k": 23,
+"key": "74c5174b9560",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ boll(n=30, k=3.0, mode=break) 10:00-15:50 [trend=with, atrq=high] stop 3 ATR, target 1.5 ATR, flat 15:55, hold 120m",
+"root": "MNQ",
+"found": "2026-10-16 18:04",
+"kind": "boll",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "boll",
+"n": 30,
+"k": 3.0,
+"mode": "break",
+"t_from": 600,
+"t_to": 950,
+"trend": "with",
+"prev": "any",
+"atrq": "high",
+"dow": "any",
+"stop": 3,
+"tgt": 1.5,
+"flat": 955,
+"hold": 120
+},
+"disc": {
+"n": 77,
+"mean": 45.59727772227774,
+"t": 3.341582790568893,
+"p": 0.00041651084673771253,
+"win": 0.7792207792207793,
+"wf": 5,
+"coin": -10.375374625374619
+},
+"hold": {
+"n": 48,
+"mean": 36.263020833333336,
+"t": 1.504554756743817,
+"p": 0.06621929278476549,
+"win": 0.6875,
+"wf": 4,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.002173913043478261
+},
+{
+"k": 24,
+"key": "5dbdb8a8b7c3",
+"verdict": "FAILED HOLDOUT",
+"text": "GC boll(n=30, k=1.5, mode=fade) 11:30-13:00 [trend=with] stop 2 ATR, target 2 ATR, flat 15:55, hold 60m",
+"root": "GC",
+"found": "2026-10-16 18:04",
+"kind": "boll",
+"base": "GC",
+"spec": {
+"base": "GC",
+"kind": "boll",
+"n": 30,
+"k": 1.5,
+"mode": "fade",
+"t_from": 690,
+"t_to": 780,
+"trend": "with",
+"prev": "any",
+"atrq": "any",
+"dow": "any",
+"stop": 2,
+"tgt": 2,
+"flat": 955,
+"hold": 60
+},
+"disc": {
+"n": 93,
+"mean": 137.95345203595411,
+"t": 3.314291071728269,
+"p": 0.0004593790600988668,
+"win": 0.6559139784946236,
+"wf": 5,
+"coin": -34.65710269517352
+},
+"hold": {
+"n": 61,
+"mean": -342.7179682688726,
+"t": -2.178799004342472,
+"p": 0.9853266985190626,
+"win": 0.3442622950819672,
+"wf": 0,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.0020833333333333333
+},
+{
+"k": 26,
+"key": "9aadc88e8fdf",
+"verdict": "FAILED HOLDOUT",
+"text": "GC pdhl(pad=1.0, mode=break) 13:00-15:00 [prev=down, atrq=high] stop 3 ATR, target 2 ATR, flat 15:55, hold 120m",
+"root": "MGC",
+"found": "2026-10-16 20:07",
+"kind": "pdhl",
+"base": "GC",
+"spec": {
+"base": "GC",
+"kind": "pdhl",
+"pad": 1.0,
+"mode": "break",
+"t_from": 780,
+"t_to": 900,
+"trend": "any",
+"prev": "down",
+"atrq": "high",
+"dow": "any",
+"stop": 3,
+"tgt": 2,
+"flat": 955,
+"hold": 120
+},
+"disc": {
+"n": 66,
+"mean": 22.576793152203336,
+"t": 3.548207277590582,
+"p": 0.0001939314289227572,
+"win": 0.6666666666666666,
+"wf": 5,
+"coin": -9.041310965900568
+},
+"hold": {
+"n": 50,
+"mean": -25.82358974359055,
+"t": -0.8921063285794059,
+"p": 0.8138320284468119,
+"win": 0.5,
+"wf": 3,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.0019230769230769232
+},
+{
+"k": 27,
+"key": "ff116ddb050a",
+"verdict": "FAILED HOLDOUT",
+"text": "CL ema(fast=5, slow=50, mode=follow) 10:30-11:30 [prev=up] stop 3 ATR, target 2 ATR, flat 11:30, hold 15m",
+"root": "CL",
+"found": "2026-10-16 20:07",
+"kind": "ema",
+"base": "CL",
+"spec": {
+"base": "CL",
+"kind": "ema",
+"fast": 5,
+"slow": 50,
+"mode": "follow",
+"t_from": 630,
+"t_to": 690,
+"trend": "any",
+"prev": "up",
+"atrq": "any",
+"dow": "any",
+"stop": 3,
+"tgt": 2,
+"flat": 690,
+"hold": 15
+},
+"disc": {
+"n": 74,
+"mean": 60.02556150096814,
+"t": 3.460645076603001,
+"p": 0.0002694413899671792,
+"win": 0.6216216216216216,
+"wf": 5,
+"coin": -50.576923076926924
+},
+"hold": {
+"n": 49,
+"mean": -24.398220826794876,
+"t": -0.6006131194643055,
+"p": 0.72595115115247,
+"win": 0.42857142857142855,
+"wf": 1,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.001851851851851852
+},
+{
+"k": 28,
+"key": "f1f09c442174",
+"verdict": "FAILED HOLDOUT",
+"text": "RTY donch(n=36, mode=break) 10:30-15:00 [prev=up] stop 3 ATR, target 2 ATR, flat 15:55",
+"root": "RTY",
+"found": "2026-10-16 20:24",
+"kind": "donch",
+"base": "RTY",
+"spec": {
+"base": "RTY",
+"kind": "donch",
+"n": 36,
+"mode": "break",
+"t_from": 630,
+"t_to": 900,
+"trend": "any",
+"prev": "up",
+"atrq": "any",
+"dow": "any",
+"stop": 3,
+"tgt": 2,
+"flat": 955,
+"hold": 0
+},
+"disc": {
+"n": 197,
+"mean": 96.44133010235569,
+"t": 3.336826637812538,
+"p": 0.00042370394037150933,
+"win": 0.6954314720812182,
+"wf": 5,
+"coin": -63.482139859492904
+},
+"hold": {
+"n": 111,
+"mean": -50.92309047010664,
+"t": -1.0727048086771591,
+"p": 0.8582982089215666,
+"win": 0.5225225225225225,
+"wf": 1,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.0017857142857142859
+},
+{
+"k": 29,
+"key": "c166525202a3",
+"verdict": "FAILED HOLDOUT",
+"text": "RTY boll(n=15, k=1.5, mode=fade) 10:00-15:50 [trend=with, prev=opp, atrq=high] stop 3 ATR, target 1.5 ATR, flat 13:00",
+"root": "RTY",
+"found": "2026-10-16 20:24",
+"kind": "boll",
+"base": "RTY",
+"spec": {
+"base": "RTY",
+"kind": "boll",
+"n": 15,
+"k": 1.5,
+"mode": "fade",
+"t_from": 600,
+"t_to": 950,
+"trend": "with",
+"prev": "opp",
+"atrq": "high",
+"dow": "any",
+"stop": 3,
+"tgt": 1.5,
+"flat": 780,
+"hold": 0
+},
+"disc": {
+"n": 64,
+"mean": 127.19785292832368,
+"t": 3.528405522562101,
+"p": 0.000209035577136465,
+"win": 0.78125,
+"wf": 5,
+"coin": 33.32465581293863
+},
+"hold": {
+"n": 42,
+"mean": -53.08974358974239,
+"t": -0.6745698494316433,
+"p": 0.7500254529729553,
+"win": 0.5714285714285714,
+"wf": 2,
+"coin": null
+},
+"hold_time": null,
+"signal": null,
+"exit_pick": null,
+"alpha": 0.001724137931034483
+},
+{
+"k": 31,
+"key": "a3657c711667",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ rsi(n=2, lo=25, mode=fade) 11:30-13:00 [dow=1] stop 3 ATR, target 5 ATR, flat 13:00, hold 30m",
+"root": "MNQ",
+"found": "2026-10-16 21:37",
+"kind": "rsi",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "rsi",
+"n": 2,
+"lo": 25,
+"mode": "fade",
+"t_from": 690,
+"t_to": 780,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": 1,
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 780,
+"hold": 30
+},
+"disc": {
+"n": 92,
+"mean": 34.375682183505745,
+"t": 3.8078522994646997,
+"p": 7.008947659176325e-05,
+"win": 0.6521739130434783,
+"wf": 5,
+"coin": -2.8813340981566453
+},
+"hold": {
+"n": 54,
+"mean": 1.3432634333797124,
+"t": 0.08469918789267158,
+"p": 0.46625027080836745,
+"win": 0.5,
+"wf": 2,
+"coin": null
+},
+"hold_time": {
+"horizon": 30,
+"n": 54,
+"mean": 4.37962962962963,
+"t": 0.2765921955491289,
+"p": 0.39104662902220083,
+"win": 0.5,
+"wf": 2,
+"coin": null
+},
+"signal": {
+"horizon": 30,
+"n": 92,
+"mean": 36.07608695652174,
+"t": 3.863064992150057,
+"p": 5.5986600760067075e-05,
+"win": 0.6521739130434783,
+"wf": 5,
+"coin": -7.184782608695652
+},
+"exit_pick": {
+"cells": 675,
+"plateau": 31.54,
+"cell": 34.38,
+"n": 92,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 34.38
+},
+"alpha": 0.0016129032258064516
+},
+{
+"k": 32,
+"key": "052df7652a91",
+"verdict": "FAILED HOLDOUT",
+"text": "RTY vwap(k=2, mode=break) 10:00-15:00 [atrq=low, pdr=wide] stop 3 ATR, target 5 ATR, flat 15:00, hold 60m",
+"root": "RTY",
+"found": "2026-10-16 21:37",
+"kind": "vwap",
+"base": "RTY",
+"spec": {
+"base": "RTY",
+"kind": "vwap",
+"k": 2,
+"mode": "break",
+"t_from": 600,
+"t_to": 900,
+"trend": "any",
+"prev": "any",
+"atrq": "low",
+"dow": "any",
+"vol": "any",
+"pdr": "wide",
+"stop": 3,
+"tgt": 5,
+"flat": 900,
+"hold": 60
+},
+"disc": {
+"n": 60,
+"mean": 178.64209401709667,
+"t": 3.7706256807841614,
+"p": 8.141938413553074e-05,
+"win": 0.7,
+"wf": 5,
+"coin": 59.13568376068699
+},
+"hold": {
+"n": 34,
+"mean": 31.092006033185694,
+"t": 0.4719736421499033,
+"p": 0.31847280117936605,
+"win": 0.47058823529411764,
+"wf": 2,
+"coin": null
+},
+"hold_time": {
+"horizon": 60,
+"n": 34,
+"mean": -7.29411764705334,
+"t": -0.10116153319391374,
+"p": 0.5402888839570887,
+"win": 0.4411764705882353,
+"wf": 3,
+"coin": null
+},
+"signal": {
+"horizon": 60,
+"n": 60,
+"mean": 225.500000000004,
+"t": 3.8413220703622972,
+"p": 6.118671244156339e-05,
+"win": 0.7333333333333333,
+"wf": 5,
+"coin": 124.66666666667143
+},
+"exit_pick": {
+"cells": 450,
+"plateau": 137.61,
+"cell": 178.64,
+"n": 60,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 178.64
+},
+"alpha": 0.0015625
+},
+{
+"k": 33,
+"key": "d620dff1311d",
+"verdict": "FAILED HOLDOUT",
+"text": "GC move(L=9, k=1.5, mode=fade) 13:00-15:50 [atrq=high, pdr=narrow] stop 3 ATR, target 5 ATR, flat 15:00, hold 60m",
+"root": "GC",
+"found": "2026-10-16 22:12",
+"kind": "move",
+"base": "GC",
+"spec": {
+"base": "GC",
+"kind": "move",
+"L": 9,
+"k": 1.5,
+"mode": "fade",
+"t_from": 780,
+"t_to": 950,
+"trend": "any",
+"prev": "any",
+"atrq": "high",
+"dow": "any",
+"vol": "any",
+"pdr": "narrow",
+"stop": 3,
+"tgt": 5,
+"flat": 900,
+"hold": 60
+},
+"disc": {
+"n": 63,
+"mean": 207.1184371184464,
+"t": 3.908256646301251,
+"p": 4.648226148024871e-05,
+"win": 0.6507936507936508,
+"wf": 5,
+"coin": -124.46886446885473
+},
+"hold": {
+"n": 41,
+"mean": -158.08630393997848,
+"t": -0.7219292447943808,
+"p": 0.7648310099908855,
+"win": 0.34146341463414637,
+"wf": 1,
+"coin": null
+},
+"hold_time": {
+"horizon": 60,
+"n": 41,
+"mean": -46.951219512213974,
+"t": -0.23544036443103084,
+"p": 0.5930665199298096,
+"win": 0.34146341463414637,
+"wf": 3,
+"coin": null
+},
+"signal": {
+"horizon": 60,
+"n": 63,
+"mean": 219.7619047619153,
+"t": 3.8069183622010567,
+"p": 7.035458397773326e-05,
+"win": 0.6507936507936508,
+"wf": 5,
+"coin": -25.634920634914284
+},
+"exit_pick": {
+"cells": 450,
+"plateau": 174.52,
+"cell": 207.12,
+"n": 63,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 207.12
+},
+"alpha": 0.0015151515151515152
+},
+{
+"k": 34,
+"key": "12b173251168",
+"verdict": "FAILED HOLDOUT",
+"text": "RTY gap(k=0.5, mode=fade) [trend=against, prev=same, vol=high] stop 3 ATR, target 5 ATR, flat 13:00, hold 120m",
+"root": "M2K",
+"found": "2026-10-16 22:12",
+"kind": "gap",
+"base": "RTY",
+"spec": {
+"base": "RTY",
+"kind": "gap",
+"k": 0.5,
+"mode": "fade",
+"t_from": 780,
+"t_to": 900,
+"trend": "against",
+"prev": "same",
+"atrq": "any",
+"dow": "any",
+"vol": "high",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 780,
+"hold": 120
+},
+"disc": {
+"n": 61,
+"mean": 31.430544261939712,
+"t": 3.594545287654015,
+"p": 0.00016247930957116082,
+"win": 0.7049180327868853,
+"wf": 5,
+"coin": 5.593761969381541
+},
+"hold": {
+"n": 46,
+"mean": -10.345601786879802,
+"t": -0.9624270811219274,
+"p": 0.832082442180411,
+"win": 0.3695652173913043,
+"wf": 1,
+"coin": null
+},
+"hold_time": {
+"horizon": 60,
+"n": 46,
+"mean": -9.54347826086909,
+"t": -0.8073391135787418,
+"p": 0.7902644324055312,
+"win": 0.43478260869565216,
+"wf": 2,
+"coin": null
+},
+"signal": {
+"horizon": 60,
+"n": 61,
+"mean": 28.23770491803331,
+"t": 3.798446575970663,
+"p": 7.280290230854369e-05,
+"win": 0.7213114754098361,
+"wf": 5,
+"coin": 1.7295081967216395
+},
+"exit_pick": {
+"cells": 900,
+"plateau": 18.79,
+"cell": 31.43,
+"n": 61,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 31.43
+},
+"alpha": 0.0014705882352941176
+},
+{
+"k": 35,
+"key": "fab4c3fe3249",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ orb(minutes=20, pad=0, mode=break) 09:35-13:00 [trend=with, atrq=high] stop 3 ATR, target 5 ATR, flat 15:00, hold 15m",
+"root": "MNQ",
+"found": "2026-10-16 22:30",
+"kind": "orb",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "orb",
+"minutes": 20,
+"pad": 0,
+"mode": "break",
+"t_from": 575,
+"t_to": 780,
+"trend": "with",
+"prev": "any",
+"atrq": "high",
+"dow": "any",
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 900,
+"hold": 15
+},
+"disc": {
+"n": 196,
+"mean": 29.196973944422922,
+"t": 3.5088951879456287,
+"p": 0.00022498609644518047,
+"win": 0.6224489795918368,
+"wf": 5,
+"coin": -8.599107949873256
+},
+"hold": {
+"n": 133,
+"mean": -8.47956429535377,
+"t": -0.8107651592214214,
+"p": 0.7912497269430946,
+"win": 0.45864661654135336,
+"wf": 2,
+"coin": null
+},
+"hold_time": {
+"horizon": 15,
+"n": 133,
+"mean": -7.503759398496241,
+"t": -0.71993721014044,
+"p": 0.7642181718464041,
+"win": 0.45864661654135336,
+"wf": 2,
+"coin": null
+},
+"signal": {
+"horizon": 15,
+"n": 196,
+"mean": 28.040816326530614,
+"t": 4.096106758219845,
+"p": 2.1007811639319915e-05,
+"win": 0.6224489795918368,
+"wf": 5,
+"coin": -8.724489795918368
+},
+"exit_pick": {
+"cells": 900,
+"plateau": 26.09,
+"cell": 29.2,
+"n": 196,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 32.71
+},
+"alpha": 0.0014285714285714286
+},
+{
+"k": 36,
+"key": "761ed206a54e",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ ema(fast=3, slow=21, mode=fade) 10:30-11:30 [prev=same, atrq=low] stop 3 ATR, target 5 ATR, flat 13:00, hold 15m",
+"root": "NQ",
+"found": "2026-10-16 22:48",
+"kind": "ema",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "ema",
+"fast": 3,
+"slow": 21,
+"mode": "fade",
+"t_from": 630,
+"t_to": 690,
+"trend": "any",
+"prev": "same",
+"atrq": "low",
+"dow": "any",
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 780,
+"hold": 15
+},
+"disc": {
+"n": 73,
+"mean": 237.42358745640047,
+"t": 3.368190179597853,
+"p": 0.00037831691977815063,
+"win": 0.6438356164383562,
+"wf": 5,
+"coin": -137.63922856372682
+},
+"hold": {
+"n": 42,
+"mean": -131.3520529857739,
+"t": -0.9796981952263999,
+"p": 0.8363824413742792,
+"win": 0.42857142857142855,
+"wf": 2,
+"coin": null
+},
+"hold_time": {
+"horizon": 15,
+"n": 42,
+"mean": -218.1904761904762,
+"t": -1.3258225983815541,
+"p": 0.9075507671047318,
+"win": 0.42857142857142855,
+"wf": 2,
+"coin": null
+},
+"signal": {
+"horizon": 15,
+"n": 73,
+"mean": 229.06164383561645,
+"t": 3.3128333249534587,
+"p": 0.00046178000494782135,
+"win": 0.6438356164383562,
+"wf": 5,
+"coin": -35.86986301369863
+},
+"exit_pick": {
+"cells": 900,
+"plateau": 211.93,
+"cell": 237.42,
+"n": 73,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 242.65
+},
+"alpha": 0.001388888888888889
+},
+{
+"k": 37,
+"key": "bb74e7fae2f7",
+"verdict": "FAILED HOLDOUT",
+"text": "GC ema(fast=8, slow=21, mode=fade) 11:30-13:00 [trend=with, prev=down] stop 3 ATR, target 5 ATR, flat 15:55",
+"root": "GC",
+"found": "2026-10-16 23:24",
+"kind": "ema",
+"base": "GC",
+"spec": {
+"base": "GC",
+"kind": "ema",
+"fast": 8,
+"slow": 21,
+"mode": "fade",
+"t_from": 690,
+"t_to": 780,
+"trend": "with",
+"prev": "down",
+"atrq": "any",
+"dow": "any",
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 955,
+"hold": 0
+},
+"disc": {
+"n": 64,
+"mean": 258.8953144703742,
+"t": 3.2955999930071114,
+"p": 0.0004910587262500716,
+"win": 0.71875,
+"wf": 5,
+"coin": 121.5115003678103
+},
+"hold": {
+"n": 44,
+"mean": -185.4851398601558,
+"t": -0.5545400469731381,
+"p": 0.7103953467896927,
+"win": 0.38636363636363635,
+"wf": 1,
+"coin": null
+},
+"hold_time": {
+"horizon": 60,
+"n": 44,
+"mean": -245.00000000003556,
+"t": -0.7996560243064397,
+"p": 0.7880449408540933,
+"win": 0.3409090909090909,
+"wf": 1,
+"coin": null
+},
+"signal": {
+"horizon": 60,
+"n": 67,
+"mean": 160.07462686568047,
+"t": 3.8007258577434793,
+"p": 7.213642399244874e-05,
+"win": 0.7014925373134329,
+"wf": 5,
+"coin": -18.235294117639167
+},
+"exit_pick": {
+"cells": 675,
+"plateau": 188.36,
+"cell": 258.9,
+"n": 64,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 258.9
+},
+"alpha": 0.0013513513513513514
+},
+{
+"k": 39,
+"key": "02897b91c6a8",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ move(L=4, k=0.5, mode=fade) 11:30-15:00 [dow=1] stop 3 ATR, target 5 ATR, flat 13:00, hold 30m",
+"root": "MNQ",
+"found": "2026-10-17 00:09",
+"kind": "move",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "move",
+"L": 4,
+"k": 0.5,
+"mode": "fade",
+"t_from": 690,
+"t_to": 900,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": 1,
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 780,
+"hold": 30
+},
+"disc": {
+"n": 92,
+"mean": 32.4784536957818,
+"t": 3.609125068367488,
+"p": 0.0001536157348415755,
+"win": 0.6521739130434783,
+"wf": 5,
+"coin": 6.6569880869046685
+},
+"hold": {
+"n": 54,
+"mean": -20.49469952958325,
+"t": -1.388593159282003,
+"p": 0.9175217506543665,
+"win": 0.37037037037037035,
+"wf": 1,
+"coin": null
+},
+"hold_time": {
+"horizon": 30,
+"n": 54,
+"mean": -18.74074074074074,
+"t": -1.2660477783125181,
+"p": 0.897252011384913,
+"win": 0.37037037037037035,
+"wf": 1,
+"coin": null
+},
+"signal": {
+"horizon": 30,
+"n": 92,
+"mean": 33.27717391304348,
+"t": 3.636384244585898,
+"p": 0.0001382459026383151,
+"win": 0.6521739130434783,
+"wf": 5,
+"coin": -10.71195652173913
+},
+"exit_pick": {
+"cells": 675,
+"plateau": 30.68,
+"cell": 32.48,
+"n": 92,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 32.48
+},
+"alpha": 0.001282051282051282
+},
+{
+"k": 41,
+"key": "37b5a5b1b692",
+"verdict": "FAILED HOLDOUT",
+"text": "ES move(L=6, k=0.5, mode=fade) 10:30-11:30 [atrq=high, vol=high, pdr=wide] stop 3 ATR, target 5 ATR, flat 15:00",
+"root": "MES",
+"found": "2026-10-17 01:39",
+"kind": "move",
+"base": "ES",
+"spec": {
+"base": "ES",
+"kind": "move",
+"L": 6,
+"k": 0.5,
+"mode": "fade",
+"t_from": 630,
+"t_to": 690,
+"trend": "any",
+"prev": "any",
+"atrq": "high",
+"dow": "any",
+"vol": "high",
+"pdr": "wide",
+"stop": 3,
+"tgt": 5,
+"flat": 900,
+"hold": 0
+},
+"disc": {
+"n": 79,
+"mean": 54.00364983118148,
+"t": 3.591070769698535,
+"p": 0.00016466109538441855,
+"win": 0.5949367088607594,
+"wf": 4,
+"coin": 3.4790636578611296
+},
+"hold": {
+"n": 52,
+"mean": -20.51534763313609,
+"t": -0.9741267327930313,
+"p": 0.835003191197373,
+"win": 0.3076923076923077,
+"wf": 1,
+"coin": null
+},
+"hold_time": {
+"horizon": 120,
+"n": 52,
+"mean": 5.302884615384615,
+"t": 0.20491523194778963,
+"p": 0.4188191771824436,
+"win": 0.38461538461538464,
+"wf": 2,
+"coin": null
+},
+"signal": {
+"horizon": 120,
+"n": 79,
+"mean": 46.50632911392405,
+"t": 3.402040285784068,
+"p": 0.0003344238880794067,
+"win": 0.6075949367088608,
+"wf": 4,
+"coin": 13.91139240506329
+},
+"exit_pick": {
+"cells": 900,
+"plateau": 33.84,
+"cell": 54.0,
+"n": 79,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 54.0
+},
+"alpha": 0.0012195121951219512
+},
+{
+"k": 43,
+"key": "24bd596d5f33",
+"verdict": "FAILED HOLDOUT",
+"text": "GC rsi(n=7, lo=30, mode=fade) 10:30-15:00 [trend=with, prev=down, atrq=high] stop 3 ATR, target 5 ATR, flat 15:00, hold 120m",
+"root": "MGC",
+"found": "2026-10-17 02:42",
+"kind": "rsi",
+"base": "GC",
+"spec": {
+"base": "GC",
+"kind": "rsi",
+"n": 7,
+"lo": 30,
+"mode": "fade",
+"t_from": 630,
+"t_to": 900,
+"trend": "with",
+"prev": "down",
+"atrq": "high",
+"dow": "any",
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 900,
+"hold": 120
+},
+"disc": {
+"n": 62,
+"mean": 34.08258891646082,
+"t": 4.305056672879923,
+"p": 8.347149619018397e-06,
+"win": 0.6935483870967742,
+"wf": 5,
+"coin": -6.286931348220624
+},
+"hold": {
+"n": 53,
+"mean": -3.8847121432049843,
+"t": -0.17392384126499677,
+"p": 0.5690373422202093,
+"win": 0.4528301886792453,
+"wf": 2,
+"coin": null
+},
+"hold_time": {
+"horizon": 60,
+"n": 53,
+"mean": 2.5603773584881075,
+"t": 0.11542783641585867,
+"p": 0.4540530080747394,
+"win": 0.5094339622641509,
+"wf": 1,
+"coin": null
+},
+"signal": {
+"horizon": 60,
+"n": 62,
+"mean": 25.62580645161371,
+"t": 3.960606715255304,
+"p": 3.73797868036469e-05,
+"win": 0.6774193548387096,
+"wf": 5,
+"coin": -5.664516129031318
+},
+"exit_pick": {
+"cells": 450,
+"plateau": 27.33,
+"cell": 34.08,
+"n": 62,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 34.08
+},
+"alpha": 0.0011627906976744186
+},
+{
+"k": 44,
+"key": "48c2ee6c0a66",
+"verdict": "FAILED HOLDOUT",
+"text": "GC orb(minutes=30, pad=0.2, mode=break) 10:30-13:00 [prev=opp, atrq=low] stop 3 ATR, target 5 ATR, flat 11:30",
+"root": "GC",
+"found": "2026-10-17 06:30",
+"kind": "orb",
+"base": "GC",
+"spec": {
+"base": "GC",
+"kind": "orb",
+"minutes": 30,
+"pad": 0.2,
+"mode": "break",
+"t_from": 630,
+"t_to": 780,
+"trend": "any",
+"prev": "opp",
+"atrq": "low",
+"dow": "any",
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 690,
+"hold": 0
+},
+"disc": {
+"n": 65,
+"mean": 217.18394929997277,
+"t": 3.3237817927396542,
+"p": 0.0004440282614408423,
+"win": 0.6615384615384615,
+"wf": 4,
+"coin": -22.178969832180087
+},
+"hold": {
+"n": 40,
+"mean": -168.17307692308685,
+"t": -0.7757095395758927,
+"p": 0.781039746999211,
+"win": 0.4,
+"wf": 2,
+"coin": null
+},
+"hold_time": {
+"horizon": 30,
+"n": 40,
+"mean": -250.2500000000282,
+"t": -1.1983427446560275,
+"p": 0.8846081938375938,
+"win": 0.35,
+"wf": 1,
+"coin": null
+},
+"signal": {
+"horizon": 30,
+"n": 65,
+"mean": 213.7692307692406,
+"t": 3.3351039418721267,
+"p": 0.00042633760497489,
+"win": 0.6,
+"wf": 5,
+"coin": -39.46153846153056
+},
+"exit_pick": {
+"cells": 900,
+"plateau": 173.73,
+"cell": 217.18,
+"n": 65,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 217.18
+},
+"alpha": 0.0011363636363636365
+},
+{
+"k": 45,
+"key": "a2cc4f41fb5d",
+"verdict": "FAILED HOLDOUT",
+"text": "NQ ema(fast=10, slow=34, mode=fade) 11:30-15:50 [dow=1] stop 3 ATR, target 5 ATR, flat 15:55",
+"root": "MNQ",
+"found": "2026-10-17 08:26",
+"kind": "ema",
+"base": "NQ",
+"spec": {
+"base": "NQ",
+"kind": "ema",
+"fast": 10,
+"slow": 34,
+"mode": "fade",
+"t_from": 690,
+"t_to": 950,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": 1,
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 955,
+"hold": 0
+},
+"disc": {
+"n": 64,
+"mean": 62.69836622316637,
+"t": 3.2979157908310865,
+"p": 0.0004870267085826755,
+"win": 0.65625,
+"wf": 4,
+"coin": -4.720121962581992
+},
+"hold": {
+"n": 40,
+"mean": -21.49405933214073,
+"t": -0.7089476935778236,
+"p": 0.7608215316234764,
+"win": 0.425,
+"wf": 1,
+"coin": null
+},
+"hold_time": {
+"horizon": 0,
+"n": 40,
+"mean": -34.1625,
+"t": -0.9725782032467067,
+"p": 0.834618509963303,
+"win": 0.45,
+"wf": 1,
+"coin": null
+},
+"signal": {
+"horizon": 0,
+"n": 64,
+"mean": 57.03125,
+"t": 3.3976395882490933,
+"p": 0.0003398495099660878,
+"win": 0.671875,
+"wf": 4,
+"coin": 15.9375
+},
+"exit_pick": {
+"cells": 225,
+"plateau": 51.45,
+"cell": 62.7,
+"n": 64,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 62.7
+},
+"alpha": 0.0011111111111111111
+},
+{
+"k": 46,
+"key": "efc6e4bc839e",
+"verdict": "FAILED HOLDOUT",
+"text": "RTY orb(minutes=60, pad=0, mode=fade) 09:35-13:00 [prev=down, pdr=narrow] stop 3 ATR, target 5 ATR, flat 15:00, hold 120m",
+"root": "RTY",
+"found": "2026-10-17 16:48",
+"kind": "orb",
+"base": "RTY",
+"spec": {
+"base": "RTY",
+"kind": "orb",
+"minutes": 60,
+"pad": 0,
+"mode": "fade",
+"t_from": 575,
+"t_to": 780,
+"trend": "any",
+"prev": "down",
+"atrq": "any",
+"dow": "any",
+"vol": "any",
+"pdr": "narrow",
+"stop": 3,
+"tgt": 5,
+"flat": 900,
+"hold": 120
+},
+"disc": {
+"n": 90,
+"mean": 157.37159610415708,
+"t": 3.5092296388917106,
+"p": 0.0002247033508579671,
+"win": 0.6666666666666666,
+"wf": 4,
+"coin": 45.8808553634153
+},
+"hold": {
+"n": 56,
+"mean": -138.62303539483202,
+"t": -2.071603417116038,
+"p": 0.9808487795012093,
+"win": 0.375,
+"wf": 0,
+"coin": null
+},
+"hold_time": {
+"horizon": 0,
+"n": 55,
+"mean": -169.13636363635524,
+"t": -1.4820113580329166,
+"p": 0.9308313635853679,
+"win": 0.34545454545454546,
+"wf": 3,
+"coin": null
+},
+"signal": {
+"horizon": 0,
+"n": 92,
+"mean": 161.53260869565625,
+"t": 3.30971586869977,
+"p": 0.00046695360312584927,
+"win": 0.6413043478260869,
+"wf": 4,
+"coin": 9.467391304351855
+},
+"exit_pick": {
+"cells": 900,
+"plateau": 143.32,
+"cell": 157.37,
+"n": 90,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 157.37
+},
+"alpha": 0.0010869565217391304
+},
+{
+"k": 47,
+"key": "646a81ecdd71",
+"verdict": "FAILED HOLDOUT",
+"text": "YM pdhl(pad=1.0, mode=break) 09:35-10:30 [trend=with, vol=high] stop 3 ATR, target 1.5 ATR, flat 11:30, hold 60m",
+"root": "YM",
+"found": "2026-10-18 19:54",
+"kind": "pdhl",
+"base": "YM",
+"spec": {
+"base": "YM",
+"kind": "pdhl",
+"pad": 1.0,
+"mode": "break",
+"t_from": 575,
+"t_to": 630,
+"trend": "with",
+"prev": "any",
+"atrq": "any",
+"dow": "any",
+"vol": "high",
+"pdr": "any",
+"stop": 3,
+"tgt": 1.5,
+"flat": 690,
+"hold": 60
+},
+"disc": {
+"n": 103,
+"mean": 129.67438482718453,
+"t": 3.8179278271631962,
+"p": 6.728863994482572e-05,
+"win": 0.7378640776699029,
+"wf": 4,
+"coin": 30.761950174458637
+},
+"hold": {
+"n": 78,
+"mean": -62.04297394614927,
+"t": -1.0398812111922149,
+"p": 0.8508024536802639,
+"win": 0.6153846153846154,
+"wf": 1,
+"coin": null
+},
+"hold_time": {
+"horizon": 15,
+"n": 78,
+"mean": -179.94871794871796,
+"t": -3.092545012928403,
+"p": 0.9990077593248529,
+"win": 0.3717948717948718,
+"wf": 0,
+"coin": null
+},
+"signal": {
+"horizon": 15,
+"n": 103,
+"mean": 104.72330097087378,
+"t": 3.316983483834303,
+"p": 0.00045497497751429485,
+"win": 0.6310679611650486,
+"wf": 5,
+"coin": -39.35436893203884
+},
+"exit_pick": {
+"cells": 900,
+"plateau": 107.76,
+"cell": 129.67,
+"n": 103,
+"nbrs": 5,
+"nbr_pos": 1.0,
+"time_only": 92.5
+},
+"alpha": 0.0010638297872340426
+},
+{
+"k": 48,
+"key": "0570992cb302",
+"verdict": "FAILED HOLDOUT",
+"text": "ES donch(n=6, mode=fade) 11:30-15:50 [prev=opp, dow=1] stop 3 ATR, target 5 ATR, flat 15:00, hold 60m",
+"root": "ES",
+"found": "2026-10-18 20:28",
+"kind": "donch",
+"base": "ES",
+"spec": {
+"base": "ES",
+"kind": "donch",
+"n": 6,
+"mode": "fade",
+"t_from": 690,
+"t_to": 950,
+"trend": "any",
+"prev": "opp",
+"atrq": "any",
+"dow": 1,
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 900,
+"hold": 60
+},
+"disc": {
+"n": 76,
+"mean": 224.6132151712017,
+"t": 3.411848311516576,
+"p": 0.0003226200405838376,
+"win": 0.631578947368421,
+"wf": 4,
+"coin": 130.42775711640456
+},
+"hold": {
+"n": 44,
+"mean": -134.50716579931694,
+"t": -1.4056490821365968,
+"p": 0.9200858231601083,
+"win": 0.4090909090909091,
+"wf": 0,
+"coin": null
+},
+"hold_time": {
+"horizon": 60,
+"n": 43,
+"mean": -150.72093023255815,
+"t": -1.4356756770720522,
+"p": 0.9244526752571832,
+"win": 0.4186046511627907,
+"wf": 1,
+"coin": null
+},
+"signal": {
+"horizon": 60,
+"n": 76,
+"mean": 243.36184210526315,
+"t": 3.5264198660910955,
+"p": 0.00021060930626323084,
+"win": 0.631578947368421,
+"wf": 5,
+"coin": -168.80921052631578
+},
+"exit_pick": {
+"cells": 675,
+"plateau": 190.55,
+"cell": 224.61,
+"n": 76,
+"nbrs": 4,
+"nbr_pos": 1.0,
+"time_only": 256.27
+},
+"alpha": 0.0010416666666666667
+}
+],
+"best": [
+{
+"spec": {
+"base": "ES",
+"kind": "tod",
+"at": 575,
+"mode": "long",
+"t_from": 690,
+"t_to": 780,
+"trend": "with",
+"prev": "any",
+"atrq": "any",
+"dow": 4,
+"stop": 2,
+"tgt": 1,
+"flat": 780,
+"hold": 30
+},
+"key": "4437d929982c",
+"root": "ES",
+"src": "mutation",
+"n": 44,
+"mean": 189.0228,
+"t": 5.7715,
+"p": 0.0,
+"win": 0.8864,
+"wf": 5,
+"coin": null,
+"text": "ES tod(at=575, mode=long) [trend=with, dow=4] stop 2 ATR, target 1 ATR, flat 13:00, hold 30m"
+},
+{
+"spec": {
+"base": "GC",
+"kind": "rsi",
+"n": 3,
+"lo": 10,
+"mode": "fade",
+"t_from": 690,
+"t_to": 780,
+"trend": "with",
+"prev": "down",
+"atrq": "any",
+"dow": "any",
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 5,
+"flat": 900,
+"hold": 15
+},
+"key": "dfc71ea38926",
+"root": "GC",
+"horizon": 120,
+"src": "random",
+"n": 43,
+"mean": 372.6744,
+"t": 5.4421,
+"p": 0.0,
+"win": 0.814,
+"wf": 5,
+"coin": null,
+"text": "GC rsi(n=3, lo=10, mode=fade) 11:30-13:00 [trend=with, prev=down] stop 3 ATR, target 5 ATR, flat 15:00, hold 15m"
+},
+{
+"spec": {
+"base": "NQ",
+"kind": "orb",
+"minutes": 20,
+"pad": 0,
+"mode": "break",
+"t_from": 575,
+"t_to": 690,
+"trend": "any",
+"prev": "any",
+"atrq": "high",
+"dow": "any",
+"vol": "high",
+"pdr": "wide",
+"stop": 3,
+"tgt": 1.5,
+"flat": 780,
+"hold": 15
+},
+"key": "c83146514273",
+"root": "NQ",
+"horizon": 15,
+"src": "mutation",
+"n": 79,
+"mean": 516.3228,
+"t": 5.2012,
+"p": 0.0,
+"win": 0.7342,
+"wf": 5,
+"coin": 83.1582,
+"text": "NQ orb(minutes=20, pad=0, mode=break) 09:35-11:30 [atrq=high, vol=high, pdr=wide] stop 3 ATR, target 1.5 ATR, flat 13:00, hold 15m"
+},
+{
+"spec": {
+"base": "GC",
+"kind": "donch",
+"n": 12,
+"mode": "fade",
+"t_from": 690,
+"t_to": 780,
+"trend": "with",
+"prev": "down",
+"atrq": "any",
+"dow": "any",
+"vol": "any",
+"pdr": "any",
+"stop": 3,
+"tgt": 2,
+"flat": 955,
+"hold": 120
+},
+"key": "63a44c8496c1",
+"root": "GC",
+"horizon": 120,
+"src": "mutation",
+"n": 60,
+"mean": 307.6667,
+"t": 5.1825,
+"p": 0.0,
+"win": 0.7333,
+"wf": 5,
+"coin": -18.7705,
+"text": "GC donch(n=12, mode=fade) 11:30-13:00 [trend=with, prev=down] stop 3 ATR, target 2 ATR, flat 15:55, hold 120m"
+},
+{
+"spec": {
+"base": "GC",
+"kind": "rsi",
+"n": 7,
+"lo": 30,
+"mode": "fade",
+"t_from": 630,
+"t_to": 900,
+"trend": "with",
+"prev": "down",
+"atrq": "any",
+"dow": "any",
+"vol": "low",
+"pdr": "any",
+"stop": 2,
+"tgt": 1.5,
+"flat": 900,
+"hold": 30
+},
+"key": "9c3f5ba06514",
+"root": "GC",
+"horizon": 60,
+"src": "mutation",
+"n": 53,
+"mean": 229.5283,
+"t": 5.0979,
+"p": 0.0,
+"win": 0.7358,
+"wf": 5,
+"coin": null,
+"text": "GC rsi(n=7, lo=30, mode=fade) 10:30-15:00 [trend=with, prev=down, vol=low] stop 2 ATR, target 1.5 ATR, flat 15:00, hold 30m"
+},
+{
+"spec": {
+"base": "GC",
+"kind": "donch",
+"n": 12,
+"mode": "fade",
+"t_from": 690,
+"t_to": 780,
+"trend": "with",
+"prev": "down",
+"atrq": "any",
+"dow": "any",
+"stop": 3,
+"tgt": 1.5,
+"flat": 955,
+"hold": 120
+},
+"key": "5aca20635239",
+"root": "GC",
+"src": "mutation",
+"n": 60,
+"mean": 229.5048,
+"t": 5.0707,
+"p": 0.0,
+"win": 0.8333,
+"wf": 5,
+"coin": -90.4311,
+"text": "GC donch(n=12, mode=fade) 11:30-13:00 [trend=with, prev=down] stop 3 ATR, target 1.5 ATR, flat 15:55, hold 120m"
+},
+{
+"spec": {
+"base": "NQ",
+"kind": "orb",
+"minutes": 20,
+"pad": 0,
+"mode": "break",
+"t_from": 575,
+"t_to": 690,
+"trend": "any",
+"prev": "any",
+"atrq": "high",
+"dow": "any",
+"vol": "high",
+"pdr": "any",
+"stop": 3,
+"tgt": 1.5,
+"flat": 780,
+"hold": 15
+},
+"key": "473ee0401ae2",
+"root": "NQ",
+"horizon": 15,
+"src": "mutation",
+"n": 104,
+"mean": 454.6346,
+"t": 5.069,
+"p": 0.0,
+"win": 0.6923,
+"wf": 5,
+"coin": 8.5769,
+"text": "NQ orb(minutes=20, pad=0, mode=break) 09:35-11:30 [atrq=high, vol=high] stop 3 ATR, target 1.5 ATR, flat 13:00, hold 15m"
+},
+{
+"spec": {
+"base": "NQ",
+"kind": "orb",
+"minutes": 20,
+"pad": 0,
+"mode": "break",
+"t_from": 575,
+"t_to": 900,
+"trend": "any",
+"prev": "any",
+"atrq": "high",
+"dow": "any",
+"vol": "high",
+"pdr": "wide",
+"stop": 3,
+"tgt": 1.5,
+"flat": 780,
+"hold": 15
+},
+"key": "0050fddcb4ef",
+"root": "NQ",
+"horizon": 15,
+"src": "mutation",
+"n": 81,
+"mean": 495.3765,
+"t": 5.0573,
+"p": 0.0,
+"win": 0.716,
+"wf": 4,
+"coin": -44.9938,
+"text": "NQ orb(minutes=20, pad=0, mode=break) 09:35-15:00 [atrq=high, vol=high, pdr=wide] stop 3 ATR, target 1.5 ATR, flat 13:00, hold 15m"
+},
+{
+"spec": {
+"base": "NQ",
+"kind": "rsi",
+"n": 3,
+"lo": 20,
+"mode": "break",
+"t_from": 575,
+"t_to": 780,
+"trend": "against",
+"prev": "down",
+"atrq": "low",
+"dow": "any",
+"vol": "any",
+"pdr": "any",
+"stop": 0.5,
+"tgt": 0.5,
+"flat": 690,
+"hold": 0
+},
+"key": "8e55c13a9bb2",
+"root": "NQ",
+"horizon": 60,
+"src": "random",
+"n": 52,
+"mean": 817.5192,
+"t": 5.0569,
+"p": 0.0,
+"win": 0.6346,
+"wf": 5,
+"coin": null,
+"text": "NQ rsi(n=3, lo=20, mode=break) 09:35-13:00 [trend=against, prev=down, atrq=low] stop 0.5 ATR, target 0.5 ATR, flat 11:30"
+},
+{
+"spec": {
+"base": "NG",
+"kind": "orb",
+"minutes": 10,
+"pad": 0.1,
+"mode": "break",
+"t_from": 600,
+"t_to": 630,
+"trend": "any",
+"prev": "any",
+"atrq": "any",
+"dow": 0,
+"vol": "any",
+"pdr": "narrow",
+"stop": 0.75,
+"tgt": 2,
+"flat": 690,
+"hold": 30
+},
+"key": "ce68b64ce697",
+"root": "NG",
+"horizon": 60,
+"src": "mutation",
+"n": 42,
+"mean": 175.7143,
+"t": 5.0318,
+"p": 0.0,
+"win": 0.8333,
+"wf": 5,
+"coin": null,
+"text": "NG orb(minutes=10, pad=0.1, mode=break) 10:00-10:30 [dow=0, pdr=narrow] stop 0.75 ATR, target 2 ATR, flat 11:30, hold 30m"
+},
+{
+"spec": {
+"base": "RTY",
+"kind": "orb",
+"minutes": 45,
+"pad": 0.1,
+"mode": "fade",
+"t_from": 630,
+"t_to": 950,
+"trend": "against",
+"prev": "any",
+"atrq": "low",
+"dow": 2,
+"stop": 3,
+"tgt": 1.5,
+"flat": 900,
+"hold": 0
+},
+"key": "7613222728db",
+"root": "RTY",
+"src": "mutation",
+"n": 41,
+"mean": 135.3757,
+"t": 4.9952,
+"p": 0.0,
+"win": 0.8537,
+"wf": 5,
+"coin": null,
+"text": "RTY orb(minutes=45, pad=0.1, mode=fade) 10:30-15:50 [trend=against, atrq=low, dow=2] stop 3 ATR, target 1.5 ATR, flat 15:00"
+},
+{
+"spec": {
+"base": "NQ",
+"kind": "move",
+"L": 6,
+"k": 3,
+"mode": "chase",
+"t_from": 600,
+"t_to": 630,
+"trend": "with",
+"prev": "same",
+"atrq": "any",
+"dow": "any",
+"stop": 1,
+"tgt": 0.75,
+"flat": 780,
+"hold": 0
+},
+"key": "99d3fe630108",
+"root": "NQ",
+"src": "mutation",
+"n": 106,
+"mean": 194.5582,
+"t": 4.9771,
+"p": 0.0,
+"win": 0.7547,
+"wf": 5,
+"coin": 0.3385,
+"text": "NQ move(L=6, k=3, mode=chase) 10:00-10:30 [trend=with, prev=same] stop 1 ATR, target 0.75 ATR, flat 13:00"
+}
+],
+"nt_compare": {
+"updated": "2026-10-18 14:25",
+"rows": []
+},
+"prereg": {
+"updated": "2026-10-18 19:22",
+"k": 107,
+"alpha": 0.05,
+"disc_end": "2025-10-01",
+"holds": [],
+"rows": [
+{
+"root": "ES",
+"h": "H15b other_1400",
+"disc": {
+"n": 337,
+"mean": -45.6,
+"sd": 459,
+"t": -1.82,
+"p": 0.9658753822067306,
+"win": 0.445,
+"sharpe": -1.38,
+"total": -15379
+},
+"hold": {
+"n": 184,
+"mean": 5.4,
+"sd": 511,
+"t": 0.14,
+"p": 0.4427808252379874,
+"win": 0.473,
+"sharpe": 0.14,
+"total": 997
+},
+"fwd": null,
+"years": {
+"2023": -204,
+"2024": -42,
+"2025": -23,
+"2026": -13
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "ES",
+"h": "H9 intraday_mom",
+"disc": {
+"n": 372,
+"mean": -31.7,
+"sd": 595,
+"t": -1.03,
+"p": 0.8474346529450736,
+"win": 0.457,
+"sharpe": -0.77,
+"total": -11774
+},
+"hold": {
+"n": 214,
+"mean": -38.4,
+"sd": 551,
+"t": -1.02,
+"p": 0.8462916447733106,
+"win": 0.425,
+"sharpe": -1.0,
+"total": -8226
+},
+"fwd": null,
+"years": {
+"2023": -54,
+"2024": -34,
+"2025": -60,
+"2026": -1
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H10b other_reversal",
+"disc": {
+"n": 305,
+"mean": 69.1,
+"sd": 633,
+"t": 1.91,
+"p": 0.02813975787027525,
+"win": 0.492,
+"sharpe": 1.44,
+"total": 21090
+},
+"hold": {
+"n": 178,
+"mean": -66.4,
+"sd": 578,
+"t": -1.53,
+"p": 0.9371110373871803,
+"win": 0.433,
+"sharpe": -1.51,
+"total": -11814
+},
+"fwd": null,
+"years": {
+"2023": -54,
+"2024": 43,
+"2025": 47,
+"2026": -49
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "ES",
+"h": "H1 overnight",
+"disc": {
+"n": 373,
+"mean": 154.5,
+"sd": 1681,
+"t": 1.78,
+"p": 0.037937622058418365,
+"win": 0.59,
+"sharpe": 1.35,
+"total": 57622
+},
+"hold": {
+"n": 214,
+"mean": 306.7,
+"sd": 2023,
+"t": 2.22,
+"p": 0.013292647158352893,
+"win": 0.556,
+"sharpe": 2.18,
+"total": 65624
+},
+"fwd": null,
+"years": {
+"2024": 115,
+"2025": 197,
+"2026": 359
+},
+"control": false,
+"verdict": "weak (not after Bonferroni) | paper since 2026-10-17 n=0 open"
+},
+{
+"root": "ES",
+"h": "H17b overnight_lovix",
+"disc": {
+"n": 170,
+"mean": 85.7,
+"sd": 1074,
+"t": 1.04,
+"p": 0.14898799101218094,
+"win": 0.594,
+"sharpe": 0.79,
+"total": 14572
+},
+"hold": {
+"n": 106,
+"mean": 66.1,
+"sd": 1743,
+"t": 0.39,
+"p": 0.34800743783786625,
+"win": 0.528,
+"sharpe": 0.38,
+"total": 7010
+},
+"fwd": null,
+"years": {
+"2024": 28,
+"2025": 166,
+"2026": 48
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "ES",
+"h": "H2 night_asia",
+"disc": {
+"n": 372,
+"mean": 45.6,
+"sd": 1370,
+"t": 0.64,
+"p": 0.26046356702854717,
+"win": 0.511,
+"sharpe": 0.49,
+"total": 16964
+},
+"hold": {
+"n": 214,
+"mean": 204.2,
+"sd": 1652,
+"t": 1.81,
+"p": 0.03526747628192429,
+"win": 0.551,
+"sharpe": 1.78,
+"total": 43700
+},
+"fwd": null,
+"years": {
+"2024": 0,
+"2025": 114,
+"2026": 233
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H3 night_eu",
+"disc": {
+"n": 372,
+"mean": 79.7,
+"sd": 1016,
+"t": 1.51,
+"p": 0.06510203408202929,
+"win": 0.559,
+"sharpe": 1.15,
+"total": 29651
+},
+"hold": {
+"n": 214,
+"mean": 73.0,
+"sd": 1229,
+"t": 0.87,
+"p": 0.19251164903610768,
+"win": 0.565,
+"sharpe": 0.86,
+"total": 15612
+},
+"fwd": null,
+"years": {
+"2024": 85,
+"2025": 54,
+"2026": 96
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H6 tom",
+"disc": {
+"n": 84,
+"mean": -344.8,
+"sd": 3393,
+"t": -0.93,
+"p": 0.8241624793245664,
+"win": 0.476,
+"sharpe": -0.71,
+"total": -28966
+},
+"hold": {
+"n": 51,
+"mean": 981.3,
+"sd": 2955,
+"t": 2.37,
+"p": 0.008852924341084336,
+"win": 0.608,
+"sharpe": 2.35,
+"total": 50046
+},
+"fwd": null,
+"years": {
+"2024": -320,
+"2025": -271,
+"2026": 1268
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H16b other_last_hour",
+"disc": {
+"n": 355,
+"mean": -26.8,
+"sd": 647,
+"t": -0.78,
+"p": 0.7823022539472393,
+"win": 0.501,
+"sharpe": -0.59,
+"total": -9510
+},
+"hold": {
+"n": 205,
+"mean": -93.7,
+"sd": 865,
+"t": -1.55,
+"p": 0.9394968262589223,
+"win": 0.444,
+"sharpe": -1.53,
+"total": -19210
+},
+"fwd": null,
+"years": {
+"2024": -11,
+"2025": -81,
+"2026": -68
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "ES",
+"h": "H7b other_14to14",
+"disc": {
+"n": 366,
+"mean": 210.1,
+"sd": 2660,
+"t": 1.51,
+"p": 0.06535699078207978,
+"win": 0.566,
+"sharpe": 1.15,
+"total": 76903
+},
+"hold": {
+"n": 208,
+"mean": 273.7,
+"sd": 3117,
+"t": 1.27,
+"p": 0.1026669146873481,
+"win": 0.538,
+"sharpe": 1.25,
+"total": 56939
+},
+"fwd": null,
+"years": {
+"2024": 181,
+"2025": 242,
+"2026": 295
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "ES",
+"h": "H5 night_up",
+"disc": {
+"n": 149,
+"mean": 57.1,
+"sd": 1498,
+"t": 0.47,
+"p": 0.3209324334070736,
+"win": 0.584,
+"sharpe": 0.35,
+"total": 8504
+},
+"hold": {
+"n": 77,
+"mean": 399.9,
+"sd": 1830,
+"t": 1.92,
+"p": 0.027558192572694037,
+"win": 0.597,
+"sharpe": 1.9,
+"total": 30791
+},
+"fwd": null,
+"years": {
+"2024": 117,
+"2025": 74,
+"2026": 386
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H4 night_down",
+"disc": {
+"n": 129,
+"mean": 126.7,
+"sd": 1608,
+"t": 0.9,
+"p": 0.18538254770838147,
+"win": 0.628,
+"sharpe": 0.68,
+"total": 16344
+},
+"hold": {
+"n": 82,
+"mean": -123.1,
+"sd": 1937,
+"t": -0.58,
+"p": 0.7174739981805452,
+"win": 0.476,
+"sharpe": -0.57,
+"total": -10094
+},
+"fwd": null,
+"years": {
+"2024": -25,
+"2025": 117,
+"2026": -12
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H6b not_tom",
+"disc": {
+"n": 292,
+"mean": 383.3,
+"sd": 2474,
+"t": 2.65,
+"p": 0.004055475168976562,
+"win": 0.582,
+"sharpe": 2.02,
+"total": 111936
+},
+"hold": {
+"n": 166,
+"mean": 3.6,
+"sd": 2932,
+"t": 0.02,
+"p": 0.49363259892209466,
+"win": 0.506,
+"sharpe": 0.02,
+"total": 603
+},
+"fwd": null,
+"years": {
+"2024": 367,
+"2025": 356,
+"2026": -71
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "ES",
+"h": "H10 fri_reversal",
+"disc": {
+"n": 71,
+"mean": 15.4,
+"sd": 329,
+"t": 0.39,
+"p": 0.34690480892661624,
+"win": 0.465,
+"sharpe": 0.3,
+"total": 1093
+},
+"hold": {
+"n": 37,
+"mean": 67.8,
+"sd": 367,
+"t": 1.12,
+"p": 0.13073288397813307,
+"win": 0.595,
+"sharpe": 1.11,
+"total": 2508
+},
+"fwd": null,
+"years": {
+"2024": 39,
+"2025": -38,
+"2026": 122
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H18b inside_noise",
+"disc": {
+"n": 214,
+"mean": 151.2,
+"sd": 1352,
+"t": 1.64,
+"p": 0.05101785669149466,
+"win": 0.523,
+"sharpe": 1.26,
+"total": 32350
+},
+"hold": {
+"n": 125,
+"mean": -112.4,
+"sd": 1958,
+"t": -0.64,
+"p": 0.7394918657554749,
+"win": 0.512,
+"sharpe": -0.64,
+"total": -14050
+},
+"fwd": null,
+"years": {
+"2024": 16,
+"2025": 238,
+"2026": -136
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "ES",
+"h": "H14b small_gap",
+"disc": {
+"n": 232,
+"mean": -74.9,
+"sd": 929,
+"t": -1.23,
+"p": 0.8903976349442041,
+"win": 0.5,
+"sharpe": -0.95,
+"total": -17382
+},
+"hold": {
+"n": 136,
+"mean": 5.8,
+"sd": 1066,
+"t": 0.06,
+"p": 0.47473976685548747,
+"win": 0.551,
+"sharpe": 0.06,
+"total": 788
+},
+"fwd": null,
+"years": {
+"2024": -34,
+"2025": -62,
+"2026": -36
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "ES",
+"h": "H14 gap_fade",
+"disc": {
+"n": 129,
+"mean": -62.2,
+"sd": 1022,
+"t": -0.69,
+"p": 0.7551232371320739,
+"win": 0.45,
+"sharpe": -0.53,
+"total": -8018
+},
+"hold": {
+"n": 81,
+"mean": 183.6,
+"sd": 1312,
+"t": 1.26,
+"p": 0.10398987445266085,
+"win": 0.519,
+"sharpe": 1.26,
+"total": 14873
+},
+"fwd": null,
+"years": {
+"2024": -47,
+"2025": -20,
+"2026": 193
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H16 month_end_hour",
+"disc": {
+"n": 21,
+"mean": -18.2,
+"sd": 630,
+"t": -0.13,
+"p": 0.5526017347977791,
+"win": 0.429,
+"sharpe": -0.1,
+"total": -382
+},
+"hold": {
+"n": 12,
+"mean": 167.4,
+"sd": 676,
+"t": 0.86,
+"p": 0.19536428055886748,
+"win": 0.667,
+"sharpe": 0.9,
+"total": 2008
+},
+"fwd": null,
+"years": {
+"2024": -226,
+"2025": 14,
+"2026": 464
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "ES",
+"h": "H18 noise_area",
+"disc": {
+"n": 149,
+"mean": -12.1,
+"sd": 1506,
+"t": -0.1,
+"p": 0.5389141226793128,
+"win": 0.537,
+"sharpe": -0.08,
+"total": -1796
+},
+"hold": {
+"n": 92,
+"mean": -61.7,
+"sd": 1686,
+"t": -0.35,
+"p": 0.6371972183294456,
+"win": 0.5,
+"sharpe": -0.35,
+"total": -5676
+},
+"fwd": null,
+"years": {
+"2024": -146,
+"2025": 105,
+"2026": -61
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H17 overnight_hivix",
+"disc": {
+"n": 203,
+"mean": 212.1,
+"sd": 2057,
+"t": 1.47,
+"p": 0.07090837240156063,
+"win": 0.586,
+"sharpe": 1.21,
+"total": 43049
+},
+"hold": {
+"n": 108,
+"mean": 542.7,
+"sd": 2248,
+"t": 2.51,
+"p": 0.006049216927368263,
+"win": 0.583,
+"sharpe": 2.59,
+"total": 58614
+},
+"fwd": null,
+"years": {
+"2024": 197,
+"2025": 220,
+"2026": 667
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H8b quiet_0830",
+"disc": {
+"n": 259,
+"mean": -17.7,
+"sd": 361,
+"t": -0.79,
+"p": 0.7848217399943482,
+"win": 0.452,
+"sharpe": -0.62,
+"total": -4578
+},
+"hold": {
+"n": 184,
+"mean": 1.9,
+"sd": 472,
+"t": 0.05,
+"p": 0.4783899067847724,
+"win": 0.495,
+"sharpe": 0.05,
+"total": 347
+},
+"fwd": null,
+"years": {
+"2024": -2,
+"2025": -35,
+"2026": 13
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "ES",
+"h": "H8 news_drift",
+"disc": {
+"n": 71,
+"mean": -170.2,
+"sd": 607,
+"t": -2.36,
+"p": 0.9909272706147535,
+"win": 0.423,
+"sharpe": -1.86,
+"total": -12082
+},
+"hold": {
+"n": 27,
+"mean": -143.4,
+"sd": 686,
+"t": -1.09,
+"p": 0.8612086388484173,
+"win": 0.407,
+"sharpe": -1.12,
+"total": -3872
+},
+"fwd": null,
+"years": {
+"2024": -37,
+"2025": -310,
+"2026": -181
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "ES",
+"h": "H13 news_fade",
+"disc": {
+"n": 71,
+"mean": 111.2,
+"sd": 607,
+"t": 1.54,
+"p": 0.06135753569904983,
+"win": 0.563,
+"sharpe": 1.22,
+"total": 7893
+},
+"hold": {
+"n": 27,
+"mean": 84.4,
+"sd": 686,
+"t": 0.64,
+"p": 0.26140908383896505,
+"win": 0.593,
+"sharpe": 0.66,
+"total": 2278
+},
+"fwd": {
+"n": 0
+},
+"years": {
+"2024": -22,
+"2025": 251,
+"2026": 122
+},
+"control": false,
+"verdict": "post-hoc (2026-10-17): forward n=0"
+},
+{
+"root": "ES",
+"h": "H7 pre_fomc",
+"disc": {
+"n": 10,
+"mean": 564.2,
+"sd": 3980,
+"t": 0.45,
+"p": 0.3269683895187135,
+"win": 0.6,
+"sharpe": 0.37,
+"total": 5642
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": 1756,
+"2025": -526,
+"2026": -913
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "NQ",
+"h": "H15b other_1400",
+"disc": {
+"n": 417,
+"mean": -54.5,
+"sd": 907,
+"t": -1.23,
+"p": 0.8903052493647379,
+"win": 0.472,
+"sharpe": -0.93,
+"total": -22736
+},
+"hold": {
+"n": 248,
+"mean": 11.4,
+"sd": 986,
+"t": 0.18,
+"p": 0.42758011302474885,
+"win": 0.488,
+"sharpe": 0.18,
+"total": 2834
+},
+"fwd": null,
+"years": {
+"2023": -182,
+"2024": -14,
+"2025": -33,
+"2026": -44
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NQ",
+"h": "H9 intraday_mom",
+"disc": {
+"n": 434,
+"mean": -28.1,
+"sd": 1135,
+"t": -0.51,
+"p": 0.6966623024179431,
+"win": 0.456,
+"sharpe": -0.39,
+"total": -12178
+},
+"hold": {
+"n": 260,
+"mean": -83.2,
+"sd": 1242,
+"t": -1.08,
+"p": 0.8598649743129055,
+"win": 0.462,
+"sharpe": -1.06,
+"total": -21625
+},
+"fwd": null,
+"years": {
+"2023": -82,
+"2024": -72,
+"2025": 28,
+"2026": -115
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NQ",
+"h": "H10b other_reversal",
+"disc": {
+"n": 347,
+"mean": 64.4,
+"sd": 1179,
+"t": 1.02,
+"p": 0.15436045630186335,
+"win": 0.524,
+"sharpe": 0.77,
+"total": 22354
+},
+"hold": {
+"n": 210,
+"mean": -32.5,
+"sd": 1278,
+"t": -0.37,
+"p": 0.6439204761564824,
+"win": 0.486,
+"sharpe": -0.36,
+"total": -6835
+},
+"fwd": null,
+"years": {
+"2023": -190,
+"2024": 13,
+"2025": 43,
+"2026": 29
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NQ",
+"h": "H1 overnight",
+"disc": {
+"n": 434,
+"mean": 239.9,
+"sd": 2982,
+"t": 1.68,
+"p": 0.0469102470483664,
+"win": 0.567,
+"sharpe": 1.26,
+"total": 104097
+},
+"hold": {
+"n": 260,
+"mean": 325.6,
+"sd": 4363,
+"t": 1.2,
+"p": 0.11442602912936492,
+"win": 0.542,
+"sharpe": 1.18,
+"total": 84660
+},
+"fwd": null,
+"years": {
+"2023": -40,
+"2024": 311,
+"2025": 173,
+"2026": 348
+},
+"control": false,
+"verdict": "weak (not after Bonferroni) | paper since 2026-10-17 n=0 open"
+},
+{
+"root": "NQ",
+"h": "H17b overnight_lovix",
+"disc": {
+"n": 194,
+"mean": 192.1,
+"sd": 2129,
+"t": 1.26,
+"p": 0.10450107363639186,
+"win": 0.593,
+"sharpe": 0.95,
+"total": 37262
+},
+"hold": {
+"n": 131,
+"mean": -137.2,
+"sd": 3670,
+"t": -0.43,
+"p": 0.6656118697501117,
+"win": 0.504,
+"sharpe": -0.42,
+"total": -17970
+},
+"fwd": null,
+"years": {
+"2023": -40,
+"2024": 176,
+"2025": 260,
+"2026": -284
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NQ",
+"h": "H2 night_asia",
+"disc": {
+"n": 434,
+"mean": 134.4,
+"sd": 1979,
+"t": 1.41,
+"p": 0.0786075164150645,
+"win": 0.541,
+"sharpe": 1.07,
+"total": 58327
+},
+"hold": {
+"n": 260,
+"mean": 187.2,
+"sd": 3053,
+"t": 0.99,
+"p": 0.16147188605782073,
+"win": 0.577,
+"sharpe": 0.97,
+"total": 48660
+},
+"fwd": null,
+"years": {
+"2023": 366,
+"2024": 182,
+"2025": 93,
+"2026": 195
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NQ",
+"h": "H3 night_eu",
+"disc": {
+"n": 434,
+"mean": 91.0,
+"sd": 2107,
+"t": 0.9,
+"p": 0.18421152480894423,
+"win": 0.535,
+"sharpe": 0.68,
+"total": 39477
+},
+"hold": {
+"n": 260,
+"mean": 124.0,
+"sd": 2912,
+"t": 0.69,
+"p": 0.24620865913935444,
+"win": 0.577,
+"sharpe": 0.67,
+"total": 32230
+},
+"fwd": null,
+"years": {
+"2023": -420,
+"2024": 115,
+"2025": 66,
+"2026": 138
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NQ",
+"h": "H4 night_down",
+"disc": {
+"n": 160,
+"mean": 452.4,
+"sd": 2753,
+"t": 2.08,
+"p": 0.018815208431730766,
+"win": 0.569,
+"sharpe": 1.57,
+"total": 72385
+},
+"hold": {
+"n": 102,
+"mean": -133.7,
+"sd": 4757,
+"t": -0.28,
+"p": 0.6117225768423581,
+"win": 0.529,
+"sharpe": -0.28,
+"total": -13634
+},
+"fwd": null,
+"years": {
+"2023": -40,
+"2024": 358,
+"2025": 271,
+"2026": 10
+},
+"control": false,
+"verdict": "weak (not after Bonferroni)"
+},
+{
+"root": "NQ",
+"h": "H6 tom",
+"disc": {
+"n": 85,
+"mean": -122.2,
+"sd": 5448,
+"t": -0.21,
+"p": 0.5819122318182093,
+"win": 0.518,
+"sharpe": -0.16,
+"total": -10388
+},
+"hold": {
+"n": 51,
+"mean": 1604.1,
+"sd": 6095,
+"t": 1.88,
+"p": 0.030085991297868007,
+"win": 0.706,
+"sharpe": 1.87,
+"total": 81810
+},
+"fwd": null,
+"years": {
+"2023": -1454,
+"2024": -363,
+"2025": 309,
+"2026": 1936
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NQ",
+"h": "H16 month_end_hour",
+"disc": {
+"n": 22,
+"mean": 422.8,
+"sd": 2068,
+"t": 0.96,
+"p": 0.16883277074006156,
+"win": 0.545,
+"sharpe": 0.72,
+"total": 9301
+},
+"hold": {
+"n": 12,
+"mean": 74.7,
+"sd": 1415,
+"t": 0.18,
+"p": 0.42746609464908536,
+"win": 0.5,
+"sharpe": 0.19,
+"total": 896
+},
+"fwd": null,
+"years": {
+"2023": -464,
+"2024": -34,
+"2025": 615,
+"2026": 410
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "NQ",
+"h": "H7b other_14to14",
+"disc": {
+"n": 421,
+"mean": 312.8,
+"sd": 5025,
+"t": 1.28,
+"p": 0.10077743868071155,
+"win": 0.565,
+"sharpe": 0.96,
+"total": 131670
+},
+"hold": {
+"n": 252,
+"mean": 406.8,
+"sd": 6619,
+"t": 0.98,
+"p": 0.16462442929502757,
+"win": 0.524,
+"sharpe": 0.96,
+"total": 102516
+},
+"fwd": null,
+"years": {
+"2023": -1840,
+"2024": 273,
+"2025": 351,
+"2026": 450
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NQ",
+"h": "H10 fri_reversal",
+"disc": {
+"n": 86,
+"mean": -91.7,
+"sd": 916,
+"t": -0.93,
+"p": 0.8233278239781759,
+"win": 0.488,
+"sharpe": -0.7,
+"total": -7887
+},
+"hold": {
+"n": 49,
+"mean": -95.9,
+"sd": 1107,
+"t": -0.61,
+"p": 0.7278709222144512,
+"win": 0.51,
+"sharpe": -0.6,
+"total": -4700
+},
+"fwd": null,
+"years": {
+"2023": 296,
+"2024": -128,
+"2025": -117,
+"2026": -26
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NQ",
+"h": "H16b other_last_hour",
+"disc": {
+"n": 413,
+"mean": -37.9,
+"sd": 1374,
+"t": -0.56,
+"p": 0.7124037152888714,
+"win": 0.496,
+"sharpe": -0.42,
+"total": -15644
+},
+"hold": {
+"n": 248,
+"mean": -62.2,
+"sd": 1819,
+"t": -0.54,
+"p": 0.7049374965246529,
+"win": 0.512,
+"sharpe": -0.53,
+"total": -15431
+},
+"fwd": null,
+"years": {
+"2024": -65,
+"2025": -90,
+"2026": 29
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NQ",
+"h": "H6b not_tom",
+"disc": {
+"n": 350,
+"mean": 457.7,
+"sd": 5257,
+"t": 1.63,
+"p": 0.051665279464725246,
+"win": 0.6,
+"sharpe": 1.24,
+"total": 160210
+},
+"hold": {
+"n": 209,
+"mean": 92.4,
+"sd": 7043,
+"t": 0.19,
+"p": 0.42479287173444924,
+"win": 0.512,
+"sharpe": 0.19,
+"total": 19310
+},
+"fwd": null,
+"years": {
+"2024": 487,
+"2025": 333,
+"2026": 97
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NQ",
+"h": "H5 night_up",
+"disc": {
+"n": 177,
+"mean": -16.7,
+"sd": 2715,
+"t": -0.08,
+"p": 0.5326723719934411,
+"win": 0.554,
+"sharpe": -0.06,
+"total": -2962
+},
+"hold": {
+"n": 102,
+"mean": -12.5,
+"sd": 3849,
+"t": -0.03,
+"p": 0.5131239761256092,
+"win": 0.52,
+"sharpe": -0.03,
+"total": -1279
+},
+"fwd": null,
+"years": {
+"2024": 278,
+"2025": -234,
+"2026": -83
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NQ",
+"h": "H18b inside_noise",
+"disc": {
+"n": 245,
+"mean": 26.6,
+"sd": 3121,
+"t": 0.13,
+"p": 0.4468464926103794,
+"win": 0.567,
+"sharpe": 0.1,
+"total": 6528
+},
+"hold": {
+"n": 140,
+"mean": -289.8,
+"sd": 4305,
+"t": -0.8,
+"p": 0.7870794233775562,
+"win": 0.471,
+"sharpe": -0.78,
+"total": -40565
+},
+"fwd": null,
+"years": {
+"2024": -164,
+"2025": 5,
+"2026": -111
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NQ",
+"h": "H14 gap_fade",
+"disc": {
+"n": 167,
+"mean": 60.8,
+"sd": 2442,
+"t": 0.32,
+"p": 0.373847561793037,
+"win": 0.509,
+"sharpe": 0.25,
+"total": 10154
+},
+"hold": {
+"n": 112,
+"mean": 405.9,
+"sd": 3340,
+"t": 1.29,
+"p": 0.09919121173863762,
+"win": 0.545,
+"sharpe": 1.26,
+"total": 45461
+},
+"fwd": null,
+"years": {
+"2024": -93,
+"2025": 285,
+"2026": 429
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NQ",
+"h": "H14b small_gap",
+"disc": {
+"n": 254,
+"mean": -99.6,
+"sd": 2027,
+"t": -0.78,
+"p": 0.7832204769274027,
+"win": 0.5,
+"sharpe": -0.6,
+"total": -25298
+},
+"hold": {
+"n": 148,
+"mean": -458.3,
+"sd": 2890,
+"t": -1.93,
+"p": 0.9731303025743576,
+"win": 0.486,
+"sharpe": -1.91,
+"total": -67826
+},
+"fwd": null,
+"years": {
+"2024": -78,
+"2025": -124,
+"2026": -580
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NQ",
+"h": "H15 fomc_cont",
+"disc": {
+"n": 14,
+"mean": -54.9,
+"sd": 1702,
+"t": -0.12,
+"p": 0.5479952749508569,
+"win": 0.5,
+"sharpe": -0.09,
+"total": -768
+},
+"hold": {
+"n": 7
+},
+"fwd": null,
+"years": {
+"2024": -173,
+"2025": 232,
+"2026": -547
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "NQ",
+"h": "H7 pre_fomc",
+"disc": {
+"n": 14,
+"mean": 1079.1,
+"sd": 4142,
+"t": 0.97,
+"p": 0.16485519039212715,
+"win": 0.571,
+"sharpe": 0.76,
+"total": 15107
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": 1813,
+"2025": 61,
+"2026": -65
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "NQ",
+"h": "H18 noise_area",
+"disc": {
+"n": 177,
+"mean": 364.5,
+"sd": 4032,
+"t": 1.2,
+"p": 0.11450583413519518,
+"win": 0.542,
+"sharpe": 0.93,
+"total": 64524
+},
+"hold": {
+"n": 120,
+"mean": 197.0,
+"sd": 3811,
+"t": 0.57,
+"p": 0.28562793442289525,
+"win": 0.5,
+"sharpe": 0.56,
+"total": 23635
+},
+"fwd": null,
+"years": {
+"2024": 1,
+"2025": 650,
+"2026": 194
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NQ",
+"h": "H8b quiet_0830",
+"disc": {
+"n": 325,
+"mean": 1.7,
+"sd": 831,
+"t": 0.04,
+"p": 0.4855497555344745,
+"win": 0.492,
+"sharpe": 0.03,
+"total": 542
+},
+"hold": {
+"n": 229,
+"mean": -1.9,
+"sd": 1017,
+"t": -0.03,
+"p": 0.5115434096460448,
+"win": 0.498,
+"sharpe": -0.03,
+"total": -446
+},
+"fwd": null,
+"years": {
+"2024": 24,
+"2025": -9,
+"2026": -13
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NQ",
+"h": "H8 news_drift",
+"disc": {
+"n": 78,
+"mean": -196.1,
+"sd": 1192,
+"t": -1.45,
+"p": 0.9268298317169391,
+"win": 0.41,
+"sharpe": -1.14,
+"total": -15296
+},
+"hold": {
+"n": 30,
+"mean": -384.7,
+"sd": 1433,
+"t": -1.47,
+"p": 0.9292696763617971,
+"win": 0.4,
+"sharpe": -1.47,
+"total": -11540
+},
+"fwd": null,
+"years": {
+"2024": 41,
+"2025": -480,
+"2026": -439
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NQ",
+"h": "H13 news_fade",
+"disc": {
+"n": 78,
+"mean": 167.1,
+"sd": 1192,
+"t": 1.24,
+"p": 0.10790066683675086,
+"win": 0.59,
+"sharpe": 0.97,
+"total": 13034
+},
+"hold": {
+"n": 30,
+"mean": 355.7,
+"sd": 1433,
+"t": 1.36,
+"p": 0.08699061159508115,
+"win": 0.6,
+"sharpe": 1.36,
+"total": 10670
+},
+"fwd": {
+"n": 0
+},
+"years": {
+"2024": -70,
+"2025": 451,
+"2026": 410
+},
+"control": false,
+"verdict": "post-hoc (2026-10-17): forward n=0"
+},
+{
+"root": "NQ",
+"h": "H17 overnight_hivix",
+"disc": {
+"n": 240,
+"mean": 278.5,
+"sd": 3528,
+"t": 1.22,
+"p": 0.11069462228277979,
+"win": 0.546,
+"sharpe": 1.01,
+"total": 66835
+},
+"hold": {
+"n": 129,
+"mean": 795.6,
+"sd": 4940,
+"t": 1.83,
+"p": 0.033687009234901366,
+"win": 0.581,
+"sharpe": 1.88,
+"total": 102630
+},
+"fwd": null,
+"years": {
+"2024": 434,
+"2025": 109,
+"2026": 1006
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H15b other_1400",
+"disc": {
+"n": 386,
+"mean": -2.1,
+"sd": 249,
+"t": -0.16,
+"p": 0.5654773242507403,
+"win": 0.508,
+"sharpe": -0.12,
+"total": -807
+},
+"hold": {
+"n": 228,
+"mean": -46.4,
+"sd": 283,
+"t": -2.48,
+"p": 0.9934343637795231,
+"win": 0.386,
+"sharpe": -2.45,
+"total": -10581
+},
+"fwd": null,
+"years": {
+"2023": 35,
+"2024": -7,
+"2025": 0,
+"2026": -55
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "RTY",
+"h": "H9 intraday_mom",
+"disc": {
+"n": 434,
+"mean": 8.0,
+"sd": 284,
+"t": 0.59,
+"p": 0.27750103739262477,
+"win": 0.516,
+"sharpe": 0.45,
+"total": 3487
+},
+"hold": {
+"n": 256,
+"mean": -35.3,
+"sd": 279,
+"t": -2.02,
+"p": 0.9785268253673854,
+"win": 0.445,
+"sharpe": -1.99,
+"total": -9032
+},
+"fwd": null,
+"years": {
+"2023": 363,
+"2024": -10,
+"2025": 0,
+"2026": -19
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H10b other_reversal",
+"disc": {
+"n": 347,
+"mean": 1.1,
+"sd": 295,
+"t": 0.07,
+"p": 0.47258677915737607,
+"win": 0.496,
+"sharpe": 0.05,
+"total": 378
+},
+"hold": {
+"n": 204,
+"mean": -4.9,
+"sd": 294,
+"t": -0.24,
+"p": 0.5938351828729058,
+"win": 0.446,
+"sharpe": -0.23,
+"total": -998
+},
+"fwd": null,
+"years": {
+"2023": 145,
+"2024": -14,
+"2025": 13,
+"2026": -3
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "RTY",
+"h": "H1 overnight",
+"disc": {
+"n": 432,
+"mean": 15.5,
+"sd": 926,
+"t": 0.35,
+"p": 0.3643998161209312,
+"win": 0.512,
+"sharpe": 0.26,
+"total": 6676
+},
+"hold": {
+"n": 255,
+"mean": 75.2,
+"sd": 962,
+"t": 1.25,
+"p": 0.1059758301852197,
+"win": 0.545,
+"sharpe": 1.23,
+"total": 19172
+},
+"fwd": null,
+"years": {
+"2023": -360,
+"2024": 46,
+"2025": -24,
+"2026": 108
+},
+"control": false,
+"verdict": "no | paper since 2026-10-17 n=0 open"
+},
+{
+"root": "RTY",
+"h": "H17b overnight_lovix",
+"disc": {
+"n": 194,
+"mean": 36.1,
+"sd": 725,
+"t": 0.69,
+"p": 0.24431821345016383,
+"win": 0.557,
+"sharpe": 0.52,
+"total": 6997
+},
+"hold": {
+"n": 129,
+"mean": 6.9,
+"sd": 669,
+"t": 0.12,
+"p": 0.4536341123581302,
+"win": 0.496,
+"sharpe": 0.11,
+"total": 884
+},
+"fwd": null,
+"years": {
+"2023": -360,
+"2024": 21,
+"2025": 46,
+"2026": 10
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "RTY",
+"h": "H2 night_asia",
+"disc": {
+"n": 416,
+"mean": 0.4,
+"sd": 521,
+"t": 0.02,
+"p": 0.49388133558772607,
+"win": 0.5,
+"sharpe": 0.01,
+"total": 163
+},
+"hold": {
+"n": 242,
+"mean": -29.6,
+"sd": 604,
+"t": -0.76,
+"p": 0.7771720879612886,
+"win": 0.545,
+"sharpe": -0.75,
+"total": -7164
+},
+"fwd": null,
+"years": {
+"2023": 110,
+"2024": 23,
+"2025": -33,
+"2026": -27
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H3 night_eu",
+"disc": {
+"n": 416,
+"mean": 0.2,
+"sd": 767,
+"t": 0.01,
+"p": 0.49762775306844903,
+"win": 0.522,
+"sharpe": 0.0,
+"total": 93
+},
+"hold": {
+"n": 242,
+"mean": 96.1,
+"sd": 787,
+"t": 1.9,
+"p": 0.028681243222724556,
+"win": 0.574,
+"sharpe": 1.87,
+"total": 23261
+},
+"fwd": null,
+"years": {
+"2023": -485,
+"2024": 24,
+"2025": -22,
+"2026": 124
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H5 night_up",
+"disc": {
+"n": 168,
+"mean": -37.3,
+"sd": 1072,
+"t": -0.45,
+"p": 0.6739113647354396,
+"win": 0.446,
+"sharpe": -0.34,
+"total": -6261
+},
+"hold": {
+"n": 93,
+"mean": -55.3,
+"sd": 908,
+"t": -0.59,
+"p": 0.7216061240838971,
+"win": 0.516,
+"sharpe": -0.58,
+"total": -5144
+},
+"fwd": null,
+"years": {
+"2023": -360,
+"2024": 40,
+"2025": -100,
+"2026": -74
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H6 tom",
+"disc": {
+"n": 85,
+"mean": -316.2,
+"sd": 1562,
+"t": -1.87,
+"p": 0.969046556444016,
+"win": 0.459,
+"sharpe": -1.41,
+"total": -26878
+},
+"hold": {
+"n": 51,
+"mean": 421.8,
+"sd": 1590,
+"t": 1.89,
+"p": 0.029048907754128394,
+"win": 0.608,
+"sharpe": 1.89,
+"total": 21511
+},
+"fwd": null,
+"years": {
+"2023": -1660,
+"2024": -487,
+"2025": 17,
+"2026": 483
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H16 month_end_hour",
+"disc": {
+"n": 22,
+"mean": -123.1,
+"sd": 786,
+"t": -0.74,
+"p": 0.7688851046392657,
+"win": 0.455,
+"sharpe": -0.55,
+"total": -2709
+},
+"hold": {
+"n": 12,
+"mean": 97.2,
+"sd": 400,
+"t": 0.84,
+"p": 0.20018556303857218,
+"win": 0.583,
+"sharpe": 0.88,
+"total": 1166
+},
+"fwd": null,
+"years": {
+"2023": -530,
+"2024": -298,
+"2025": 83,
+"2026": 174
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "RTY",
+"h": "H7b other_14to14",
+"disc": {
+"n": 420,
+"mean": 11.6,
+"sd": 1481,
+"t": 0.16,
+"p": 0.4363267159676128,
+"win": 0.481,
+"sharpe": 0.12,
+"total": 4865
+},
+"hold": {
+"n": 247,
+"mean": 69.7,
+"sd": 1585,
+"t": 0.69,
+"p": 0.24485128409494925,
+"win": 0.502,
+"sharpe": 0.68,
+"total": 17208
+},
+"fwd": null,
+"years": {
+"2023": -1055,
+"2024": 13,
+"2025": 24,
+"2026": 76
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "RTY",
+"h": "H10 fri_reversal",
+"disc": {
+"n": 88,
+"mean": 22.7,
+"sd": 231,
+"t": 0.92,
+"p": 0.17837927774395426,
+"win": 0.568,
+"sharpe": 0.7,
+"total": 1999
+},
+"hold": {
+"n": 49,
+"mean": 25.7,
+"sd": 210,
+"t": 0.86,
+"p": 0.19524412459070578,
+"win": 0.531,
+"sharpe": 0.85,
+"total": 1259
+},
+"fwd": null,
+"years": {
+"2023": 581,
+"2024": -10,
+"2025": 12,
+"2026": 70
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H16b other_last_hour",
+"disc": {
+"n": 412,
+"mean": -17.2,
+"sd": 350,
+"t": -1.0,
+"p": 0.8406723042215788,
+"win": 0.49,
+"sharpe": -0.76,
+"total": -7089
+},
+"hold": {
+"n": 244,
+"mean": -27.6,
+"sd": 399,
+"t": -1.08,
+"p": 0.8599243690491771,
+"win": 0.463,
+"sharpe": -1.06,
+"total": -6728
+},
+"fwd": null,
+"years": {
+"2024": -39,
+"2025": -21,
+"2026": 2
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "RTY",
+"h": "H4 night_down",
+"disc": {
+"n": 168,
+"mean": 56.8,
+"sd": 823,
+"t": 0.89,
+"p": 0.18552336159598823,
+"win": 0.542,
+"sharpe": 0.68,
+"total": 9544
+},
+"hold": {
+"n": 107,
+"mean": 48.5,
+"sd": 968,
+"t": 0.52,
+"p": 0.3020435818105447,
+"win": 0.57,
+"sharpe": 0.51,
+"total": 5193
+},
+"fwd": null,
+"years": {
+"2024": 83,
+"2025": -39,
+"2026": 128
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H6b not_tom",
+"disc": {
+"n": 349,
+"mean": 112.8,
+"sd": 1468,
+"t": 1.43,
+"p": 0.07565418323054184,
+"win": 0.519,
+"sharpe": 1.09,
+"total": 39365
+},
+"hold": {
+"n": 205,
+"mean": -39.0,
+"sd": 1553,
+"t": -0.36,
+"p": 0.6404728269989495,
+"win": 0.517,
+"sharpe": -0.36,
+"total": -7998
+},
+"fwd": null,
+"years": {
+"2024": 149,
+"2025": 41,
+"2026": -43
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "RTY",
+"h": "H18 noise_area",
+"disc": {
+"n": 173,
+"mean": -26.8,
+"sd": 842,
+"t": -0.42,
+"p": 0.6624542729044549,
+"win": 0.52,
+"sharpe": -0.32,
+"total": -4643
+},
+"hold": {
+"n": 115,
+"mean": -64.1,
+"sd": 1159,
+"t": -0.59,
+"p": 0.7234176577187017,
+"win": 0.478,
+"sharpe": -0.58,
+"total": -7367
+},
+"fwd": null,
+"years": {
+"2024": -10,
+"2025": 5,
+"2026": -133
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H14 gap_fade",
+"disc": {
+"n": 173,
+"mean": 36.8,
+"sd": 734,
+"t": 0.66,
+"p": 0.25449616674383757,
+"win": 0.543,
+"sharpe": 0.51,
+"total": 6372
+},
+"hold": {
+"n": 110,
+"mean": 75.7,
+"sd": 861,
+"t": 0.92,
+"p": 0.1780092759798593,
+"win": 0.518,
+"sharpe": 0.91,
+"total": 8330
+},
+"fwd": null,
+"years": {
+"2024": -16,
+"2025": 118,
+"2026": 48
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H18b inside_noise",
+"disc": {
+"n": 248,
+"mean": 7.0,
+"sd": 1037,
+"t": 0.11,
+"p": 0.45773647646106286,
+"win": 0.516,
+"sharpe": 0.08,
+"total": 1734
+},
+"hold": {
+"n": 141,
+"mean": -49.9,
+"sd": 954,
+"t": -0.62,
+"p": 0.7324824214251441,
+"win": 0.433,
+"sharpe": -0.61,
+"total": -7029
+},
+"fwd": null,
+"years": {
+"2024": -20,
+"2025": 14,
+"2026": -42
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "RTY",
+"h": "H14b small_gap",
+"disc": {
+"n": 247,
+"mean": 8.5,
+"sd": 646,
+"t": 0.21,
+"p": 0.41851809968058923,
+"win": 0.514,
+"sharpe": 0.16,
+"total": 2089
+},
+"hold": {
+"n": 146,
+"mean": 75.7,
+"sd": 820,
+"t": 1.12,
+"p": 0.13221919774409743,
+"win": 0.507,
+"sharpe": 1.1,
+"total": 11058
+},
+"fwd": null,
+"years": {
+"2024": 13,
+"2025": -9,
+"2026": 114
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "RTY",
+"h": "H15 fomc_cont",
+"disc": {
+"n": 14,
+"mean": -347.7,
+"sd": 1100,
+"t": -1.18,
+"p": 0.8814500439557074,
+"win": 0.357,
+"sharpe": -0.93,
+"total": -4868
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": -738,
+"2025": 145,
+"2026": -280
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "RTY",
+"h": "H7 pre_fomc",
+"disc": {
+"n": 14,
+"mean": 481.2,
+"sd": 864,
+"t": 2.08,
+"p": 0.0185566160068289,
+"win": 0.643,
+"sharpe": 1.63,
+"total": 6737
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": 369,
+"2025": 464,
+"2026": -299
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "RTY",
+"h": "H8b quiet_0830",
+"disc": {
+"n": 310,
+"mean": -7.5,
+"sd": 249,
+"t": -0.53,
+"p": 0.70213088585824,
+"win": 0.5,
+"sharpe": -0.42,
+"total": -2325
+},
+"hold": {
+"n": 219,
+"mean": -23.9,
+"sd": 268,
+"t": -1.32,
+"p": 0.9060512075361128,
+"win": 0.511,
+"sharpe": -1.3,
+"total": -5231
+},
+"fwd": null,
+"years": {
+"2024": -27,
+"2025": 1,
+"2026": -21
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "RTY",
+"h": "H8 news_drift",
+"disc": {
+"n": 86,
+"mean": -142.8,
+"sd": 404,
+"t": -3.27,
+"p": 0.9994699632632063,
+"win": 0.349,
+"sharpe": -2.57,
+"total": -12277
+},
+"hold": {
+"n": 34,
+"mean": -92.3,
+"sd": 472,
+"t": -1.14,
+"p": 0.8728668386344052,
+"win": 0.471,
+"sharpe": -1.18,
+"total": -3138
+},
+"fwd": null,
+"years": {
+"2024": -77,
+"2025": -227,
+"2026": -94
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "RTY",
+"h": "H13 news_fade",
+"disc": {
+"n": 86,
+"mean": 113.8,
+"sd": 404,
+"t": 2.61,
+"p": 0.004540781437168477,
+"win": 0.581,
+"sharpe": 2.05,
+"total": 9783
+},
+"hold": {
+"n": 34,
+"mean": 63.3,
+"sd": 472,
+"t": 0.78,
+"p": 0.2171571820813899,
+"win": 0.529,
+"sharpe": 0.81,
+"total": 2152
+},
+"fwd": {
+"n": 0
+},
+"years": {
+"2024": 48,
+"2025": 198,
+"2026": 65
+},
+"control": false,
+"verdict": "post-hoc (2026-10-17): forward n=0"
+},
+{
+"root": "RTY",
+"h": "H17 overnight_hivix",
+"disc": {
+"n": 238,
+"mean": -1.3,
+"sd": 1064,
+"t": -0.02,
+"p": 0.5078032474821373,
+"win": 0.475,
+"sharpe": -0.02,
+"total": -321
+},
+"hold": {
+"n": 126,
+"mean": 145.1,
+"sd": 1189,
+"t": 1.37,
+"p": 0.08521829246188488,
+"win": 0.595,
+"sharpe": 1.41,
+"total": 18288
+},
+"fwd": null,
+"years": {
+"2024": 69,
+"2025": -77,
+"2026": 211
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H15b other_1400",
+"disc": {
+"n": 371,
+"mean": -40.1,
+"sd": 303,
+"t": -2.55,
+"p": 0.9945807838608813,
+"win": 0.418,
+"sharpe": -1.92,
+"total": -14885
+},
+"hold": {
+"n": 240,
+"mean": 14.9,
+"sd": 875,
+"t": 0.26,
+"p": 0.3961774462842884,
+"win": 0.508,
+"sharpe": 0.26,
+"total": 3570
+},
+"fwd": null,
+"years": {
+"2023": -195,
+"2024": -53,
+"2025": -13,
+"2026": 16
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "GC",
+"h": "H9 intraday_mom",
+"disc": {
+"n": 436,
+"mean": -31.4,
+"sd": 292,
+"t": -2.24,
+"p": 0.9875127712342785,
+"win": 0.438,
+"sharpe": -1.69,
+"total": -13670
+},
+"hold": {
+"n": 256,
+"mean": -115.4,
+"sd": 977,
+"t": -1.89,
+"p": 0.9706295334527903,
+"win": 0.445,
+"sharpe": -1.86,
+"total": -29550
+},
+"fwd": null,
+"years": {
+"2023": -235,
+"2024": -5,
+"2025": -60,
+"2026": -137
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H10b other_reversal",
+"disc": {
+"n": 347,
+"mean": -13.4,
+"sd": 292,
+"t": -0.86,
+"p": 0.8037284611007138,
+"win": 0.458,
+"sharpe": -0.64,
+"total": -4645
+},
+"hold": {
+"n": 205,
+"mean": -58.7,
+"sd": 986,
+"t": -0.85,
+"p": 0.8031141348840077,
+"win": 0.459,
+"sharpe": -0.84,
+"total": -12035
+},
+"fwd": null,
+"years": {
+"2023": -195,
+"2024": -26,
+"2025": -5,
+"2026": -67
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "GC",
+"h": "H12 gold_fix",
+"disc": {
+"n": 438,
+"mean": -6.5,
+"sd": 865,
+"t": -0.16,
+"p": 0.5627334247475746,
+"win": 0.475,
+"sharpe": -0.12,
+"total": -2860
+},
+"hold": {
+"n": 258,
+"mean": 53.6,
+"sd": 2243,
+"t": 0.38,
+"p": 0.3504347987508641,
+"win": 0.5,
+"sharpe": 0.38,
+"total": 13840
+},
+"fwd": null,
+"years": {
+"2023": -485,
+"2024": 1,
+"2025": 61,
+"2026": -17
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H1 overnight",
+"disc": {
+"n": 437,
+"mean": 208.7,
+"sd": 2365,
+"t": 1.84,
+"p": 0.03254246483494712,
+"win": 0.584,
+"sharpe": 1.39,
+"total": 91185
+},
+"hold": {
+"n": 258,
+"mean": 427.4,
+"sd": 6370,
+"t": 1.08,
+"p": 0.1405739686914428,
+"win": 0.601,
+"sharpe": 1.06,
+"total": 110270
+},
+"fwd": null,
+"years": {
+"2023": -615,
+"2024": 119,
+"2025": 489,
+"2026": 258
+},
+"control": false,
+"verdict": "weak (not after Bonferroni) | paper since 2026-10-17 n=0 open"
+},
+{
+"root": "GC",
+"h": "H17b overnight_lovix",
+"disc": {
+"n": 196,
+"mean": 282.1,
+"sd": 1869,
+"t": 2.11,
+"p": 0.017286556159426297,
+"win": 0.597,
+"sharpe": 1.6,
+"total": 55290
+},
+"hold": {
+"n": 129,
+"mean": 514.4,
+"sd": 6145,
+"t": 0.95,
+"p": 0.1708728533572616,
+"win": 0.589,
+"sharpe": 0.94,
+"total": 66355
+},
+"fwd": null,
+"years": {
+"2023": -615,
+"2024": 223,
+"2025": 607,
+"2026": 317
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "GC",
+"h": "H2 night_asia",
+"disc": {
+"n": 437,
+"mean": 83.7,
+"sd": 1500,
+"t": 1.17,
+"p": 0.12162509662422503,
+"win": 0.531,
+"sharpe": 0.88,
+"total": 36585
+},
+"hold": {
+"n": 258,
+"mean": 305.4,
+"sd": 4789,
+"t": 1.02,
+"p": 0.15283203088446065,
+"win": 0.527,
+"sharpe": 1.01,
+"total": 78790
+},
+"fwd": null,
+"years": {
+"2023": 565,
+"2024": 50,
+"2025": 243,
+"2026": 214
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H3 night_eu",
+"disc": {
+"n": 437,
+"mean": 99.9,
+"sd": 1644,
+"t": 1.27,
+"p": 0.10193345060704927,
+"win": 0.556,
+"sharpe": 0.96,
+"total": 43675
+},
+"hold": {
+"n": 258,
+"mean": 97.0,
+"sd": 4410,
+"t": 0.35,
+"p": 0.36190971470500777,
+"win": 0.562,
+"sharpe": 0.35,
+"total": 25030
+},
+"fwd": null,
+"years": {
+"2023": -1205,
+"2024": 44,
+"2025": 222,
+"2026": 19
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H4 night_down",
+"disc": {
+"n": 148,
+"mean": 428.7,
+"sd": 2159,
+"t": 2.42,
+"p": 0.0078410587101592,
+"win": 0.635,
+"sharpe": 1.83,
+"total": 63450
+},
+"hold": {
+"n": 110,
+"mean": 214.5,
+"sd": 7397,
+"t": 0.3,
+"p": 0.380490473026043,
+"win": 0.609,
+"sharpe": 0.3,
+"total": 23600
+},
+"fwd": null,
+"years": {
+"2023": -615,
+"2024": 271,
+"2025": 711,
+"2026": 80
+},
+"control": false,
+"verdict": "weak (not after Bonferroni)"
+},
+{
+"root": "GC",
+"h": "H6 tom",
+"disc": {
+"n": 85,
+"mean": 716.8,
+"sd": 2809,
+"t": 2.35,
+"p": 0.0093134307909517,
+"win": 0.576,
+"sharpe": 1.78,
+"total": 60925
+},
+"hold": {
+"n": 51,
+"mean": 4.4,
+"sd": 11566,
+"t": 0.0,
+"p": 0.4989132757635744,
+"win": 0.549,
+"sharpe": 0.0,
+"total": 225
+},
+"fwd": null,
+"years": {
+"2023": -425,
+"2024": 272,
+"2025": 1047,
+"2026": -45
+},
+"control": false,
+"verdict": "weak (not after Bonferroni)"
+},
+{
+"root": "GC",
+"h": "H16 month_end_hour",
+"disc": {
+"n": 22,
+"mean": 141.4,
+"sd": 577,
+"t": 1.15,
+"p": 0.12534042065403694,
+"win": 0.545,
+"sharpe": 0.87,
+"total": 3110
+},
+"hold": {
+"n": 12,
+"mean": -450.0,
+"sd": 2700,
+"t": -0.58,
+"p": 0.7181620643916593,
+"win": 0.583,
+"sharpe": -0.6,
+"total": -5400
+},
+"fwd": null,
+"years": {
+"2023": -425,
+"2024": 88,
+"2025": 227,
+"2026": -627
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "GC",
+"h": "H7b other_14to14",
+"disc": {
+"n": 424,
+"mean": 389.9,
+"sd": 3079,
+"t": 2.61,
+"p": 0.004566256685310897,
+"win": 0.585,
+"sharpe": 1.97,
+"total": 165310
+},
+"hold": {
+"n": 247,
+"mean": 29.7,
+"sd": 8211,
+"t": 0.06,
+"p": 0.47730564985760804,
+"win": 0.559,
+"sharpe": 0.06,
+"total": 7345
+},
+"fwd": null,
+"years": {
+"2023": -885,
+"2024": 177,
+"2025": 690,
+"2026": -191
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "GC",
+"h": "H10 fri_reversal",
+"disc": {
+"n": 87,
+"mean": -53.3,
+"sd": 295,
+"t": -1.68,
+"p": 0.9539466818594645,
+"win": 0.471,
+"sharpe": -1.28,
+"total": -4635
+},
+"hold": {
+"n": 49,
+"mean": -67.4,
+"sd": 849,
+"t": -0.56,
+"p": 0.7108480137149005,
+"win": 0.51,
+"sharpe": -0.55,
+"total": -3305
+},
+"fwd": null,
+"years": {
+"2023": 225,
+"2024": -2,
+"2025": -58,
+"2026": -141
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H16b other_last_hour",
+"disc": {
+"n": 416,
+"mean": -8.6,
+"sd": 452,
+"t": -0.39,
+"p": 0.6514358477695423,
+"win": 0.488,
+"sharpe": -0.29,
+"total": -3590
+},
+"hold": {
+"n": 246,
+"mean": 43.0,
+"sd": 1559,
+"t": 0.43,
+"p": 0.3326281813853992,
+"win": 0.492,
+"sharpe": 0.43,
+"total": 10580
+},
+"fwd": null,
+"years": {
+"2024": -55,
+"2025": 62,
+"2026": 29
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "GC",
+"h": "H5 night_up",
+"disc": {
+"n": 193,
+"mean": 95.5,
+"sd": 2398,
+"t": 0.55,
+"p": 0.2900961377969017,
+"win": 0.554,
+"sharpe": 0.42,
+"total": 18425
+},
+"hold": {
+"n": 92,
+"mean": 635.9,
+"sd": 5362,
+"t": 1.14,
+"p": 0.1276713591501905,
+"win": 0.587,
+"sharpe": 1.13,
+"total": 58500
+},
+"fwd": null,
+"years": {
+"2024": 153,
+"2025": 129,
+"2026": 677
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H6b not_tom",
+"disc": {
+"n": 353,
+"mean": 309.1,
+"sd": 3080,
+"t": 1.89,
+"p": 0.029672170698271657,
+"win": 0.55,
+"sharpe": 1.43,
+"total": 109115
+},
+"hold": {
+"n": 207,
+"mean": 112.6,
+"sd": 7746,
+"t": 0.21,
+"p": 0.41714623218694913,
+"win": 0.536,
+"sharpe": 0.21,
+"total": 23315
+},
+"fwd": null,
+"years": {
+"2024": 184,
+"2025": 559,
+"2026": -109
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "GC",
+"h": "H18 noise_area",
+"disc": {
+"n": 175,
+"mean": -51.4,
+"sd": 1335,
+"t": -0.51,
+"p": 0.6947741983842795,
+"win": 0.543,
+"sharpe": -0.39,
+"total": -8995
+},
+"hold": {
+"n": 94,
+"mean": -158.0,
+"sd": 3870,
+"t": -0.4,
+"p": 0.6538574926403384,
+"win": 0.564,
+"sharpe": -0.39,
+"total": -14850
+},
+"fwd": null,
+"years": {
+"2024": -74,
+"2025": 58,
+"2026": -312
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H14b small_gap",
+"disc": {
+"n": 258,
+"mean": -130.7,
+"sd": 975,
+"t": -2.15,
+"p": 0.9843456995443878,
+"win": 0.461,
+"sharpe": -1.66,
+"total": -33710
+},
+"hold": {
+"n": 151,
+"mean": 35.4,
+"sd": 2411,
+"t": 0.18,
+"p": 0.42841552788272286,
+"win": 0.503,
+"sharpe": 0.18,
+"total": 5345
+},
+"fwd": null,
+"years": {
+"2024": -109,
+"2025": -32,
+"2026": -67
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "GC",
+"h": "H18b inside_noise",
+"disc": {
+"n": 250,
+"mean": 30.0,
+"sd": 1289,
+"t": 0.37,
+"p": 0.35646830734441326,
+"win": 0.56,
+"sharpe": 0.28,
+"total": 7500
+},
+"hold": {
+"n": 164,
+"mean": -345.5,
+"sd": 3876,
+"t": -1.14,
+"p": 0.873171540789747,
+"win": 0.451,
+"sharpe": -1.13,
+"total": -56660
+},
+"fwd": null,
+"years": {
+"2024": -1,
+"2025": 71,
+"2026": -478
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "GC",
+"h": "H14 gap_fade",
+"disc": {
+"n": 165,
+"mean": -88.6,
+"sd": 1075,
+"t": -1.06,
+"p": 0.8551791671522867,
+"win": 0.418,
+"sharpe": -0.82,
+"total": -14625
+},
+"hold": {
+"n": 106,
+"mean": 159.9,
+"sd": 4245,
+"t": 0.39,
+"p": 0.349075566351875,
+"win": 0.5,
+"sharpe": 0.38,
+"total": 16950
+},
+"fwd": null,
+"years": {
+"2024": -107,
+"2025": -110,
+"2026": 304
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H15 fomc_cont",
+"disc": {
+"n": 13,
+"mean": -264.2,
+"sd": 1124,
+"t": -0.85,
+"p": 0.8016109679116039,
+"win": 0.538,
+"sharpe": -0.66,
+"total": -3435
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": -621,
+"2025": -72,
+"2026": -1853
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "GC",
+"h": "H7 pre_fomc",
+"disc": {
+"n": 14,
+"mean": 190.7,
+"sd": 1775,
+"t": 0.4,
+"p": 0.3438321008814387,
+"win": 0.429,
+"sharpe": 0.31,
+"total": 2670
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": 920,
+"2025": -391,
+"2026": 2517
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "GC",
+"h": "H8b quiet_0830",
+"disc": {
+"n": 357,
+"mean": 35.5,
+"sd": 732,
+"t": 0.92,
+"p": 0.17975565033702753,
+"win": 0.501,
+"sharpe": 0.72,
+"total": 12675
+},
+"hold": {
+"n": 236,
+"mean": 189.9,
+"sd": 1694,
+"t": 1.72,
+"p": 0.042587195043250314,
+"win": 0.5,
+"sharpe": 1.69,
+"total": 44810
+},
+"fwd": null,
+"years": {
+"2024": 16,
+"2025": 141,
+"2026": 129
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "GC",
+"h": "H8 news_drift",
+"disc": {
+"n": 45,
+"mean": -337.7,
+"sd": 1172,
+"t": -1.93,
+"p": 0.9733581759136085,
+"win": 0.356,
+"sharpe": -1.54,
+"total": -15195
+},
+"hold": {
+"n": 21,
+"mean": -480.2,
+"sd": 2281,
+"t": -0.96,
+"p": 0.8327119447004143,
+"win": 0.429,
+"sharpe": -1.0,
+"total": -10085
+},
+"fwd": null,
+"years": {
+"2024": -141,
+"2025": -428,
+"2026": -678
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "GC",
+"h": "H13 news_fade",
+"disc": {
+"n": 45,
+"mean": 287.7,
+"sd": 1172,
+"t": 1.65,
+"p": 0.04983629809880646,
+"win": 0.644,
+"sharpe": 1.31,
+"total": 12945
+},
+"hold": {
+"n": 21,
+"mean": 430.2,
+"sd": 2281,
+"t": 0.86,
+"p": 0.1936640469326266,
+"win": 0.571,
+"sharpe": 0.89,
+"total": 9035
+},
+"fwd": {
+"n": 0
+},
+"years": {
+"2024": 91,
+"2025": 378,
+"2026": 628
+},
+"control": false,
+"verdict": "post-hoc (2026-10-17): forward n=0"
+},
+{
+"root": "GC",
+"h": "H17 overnight_hivix",
+"disc": {
+"n": 241,
+"mean": 148.9,
+"sd": 2704,
+"t": 0.86,
+"p": 0.19625956221132917,
+"win": 0.573,
+"sharpe": 0.7,
+"total": 35895
+},
+"hold": {
+"n": 129,
+"mean": 340.4,
+"sd": 6610,
+"t": 0.58,
+"p": 0.2792893316304159,
+"win": 0.612,
+"sharpe": 0.6,
+"total": 43915
+},
+"fwd": null,
+"years": {
+"2024": 24,
+"2025": 403,
+"2026": 197
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H15b other_1400",
+"disc": {
+"n": 359,
+"mean": -18.5,
+"sd": 234,
+"t": -1.5,
+"p": 0.9334550804308661,
+"win": 0.448,
+"sharpe": -1.13,
+"total": -6655
+},
+"hold": {
+"n": 223,
+"mean": -80.5,
+"sd": 530,
+"t": -2.27,
+"p": 0.9884182887609941,
+"win": 0.386,
+"sharpe": -2.23,
+"total": -17955
+},
+"fwd": null,
+"years": {
+"2023": 175,
+"2024": -9,
+"2025": -35,
+"2026": -92
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "CL",
+"h": "H9 intraday_mom",
+"disc": {
+"n": 430,
+"mean": -20.5,
+"sd": 113,
+"t": -3.77,
+"p": 0.9999183310955625,
+"win": 0.409,
+"sharpe": -2.84,
+"total": -8830
+},
+"hold": {
+"n": 254,
+"mean": -34.3,
+"sd": 340,
+"t": -1.61,
+"p": 0.9459970843877534,
+"win": 0.449,
+"sharpe": -1.58,
+"total": -8700
+},
+"fwd": null,
+"years": {
+"2023": 55,
+"2024": -20,
+"2025": -21,
+"2026": -40
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H10b other_reversal",
+"disc": {
+"n": 344,
+"mean": -27.3,
+"sd": 107,
+"t": -4.73,
+"p": 0.9999988679271384,
+"win": 0.381,
+"sharpe": -3.57,
+"total": -9380
+},
+"hold": {
+"n": 202,
+"mean": -12.5,
+"sd": 363,
+"t": -0.49,
+"p": 0.6879590980193384,
+"win": 0.421,
+"sharpe": -0.48,
+"total": -2530
+},
+"fwd": null,
+"years": {
+"2023": -95,
+"2024": -29,
+"2025": -27,
+"2026": -6
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "CL",
+"h": "H1 overnight",
+"disc": {
+"n": 437,
+"mean": -53.2,
+"sd": 986,
+"t": -1.13,
+"p": 0.8702495931988216,
+"win": 0.508,
+"sharpe": -0.85,
+"total": -23245
+},
+"hold": {
+"n": 258,
+"mean": -241.5,
+"sd": 2516,
+"t": -1.54,
+"p": 0.938425995765114,
+"win": 0.461,
+"sharpe": -1.51,
+"total": -62300
+},
+"fwd": null,
+"years": {
+"2023": 445,
+"2024": -27,
+"2025": -105,
+"2026": -271
+},
+"control": false,
+"verdict": "no | paper since 2026-10-17 n=0 open"
+},
+{
+"root": "CL",
+"h": "H17b overnight_lovix",
+"disc": {
+"n": 196,
+"mean": 58.5,
+"sd": 738,
+"t": 1.11,
+"p": 0.13362101718992125,
+"win": 0.561,
+"sharpe": 0.84,
+"total": 11460
+},
+"hold": {
+"n": 130,
+"mean": -103.7,
+"sd": 1585,
+"t": -0.75,
+"p": 0.7720754153114223,
+"win": 0.492,
+"sharpe": -0.73,
+"total": -13480
+},
+"fwd": null,
+"years": {
+"2023": 445,
+"2024": 105,
+"2025": -67,
+"2026": -78
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "CL",
+"h": "H2 night_asia",
+"disc": {
+"n": 431,
+"mean": -73.7,
+"sd": 559,
+"t": -2.74,
+"p": 0.9969186976606011,
+"win": 0.45,
+"sharpe": -2.07,
+"total": -31785
+},
+"hold": {
+"n": 257,
+"mean": -200.1,
+"sd": 1576,
+"t": -2.03,
+"p": 0.9790598132373325,
+"win": 0.44,
+"sharpe": -2.0,
+"total": -51415
+},
+"fwd": null,
+"years": {
+"2023": -105,
+"2024": -72,
+"2025": -52,
+"2026": -270
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H3 night_eu",
+"disc": {
+"n": 431,
+"mean": -5.6,
+"sd": 775,
+"t": -0.15,
+"p": 0.5596447951038975,
+"win": 0.527,
+"sharpe": -0.11,
+"total": -2415
+},
+"hold": {
+"n": 257,
+"mean": -48.9,
+"sd": 1774,
+"t": -0.44,
+"p": 0.6708465883754514,
+"win": 0.486,
+"sharpe": -0.43,
+"total": -12575
+},
+"fwd": null,
+"years": {
+"2023": 525,
+"2024": 16,
+"2025": -77,
+"2026": -3
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H4 night_down",
+"disc": {
+"n": 166,
+"mean": 23.5,
+"sd": 863,
+"t": 0.35,
+"p": 0.3628687087489187,
+"win": 0.536,
+"sharpe": 0.26,
+"total": 3900
+},
+"hold": {
+"n": 92,
+"mean": -106.4,
+"sd": 2775,
+"t": -0.37,
+"p": 0.6435003378483308,
+"win": 0.435,
+"sharpe": -0.36,
+"total": -9790
+},
+"fwd": null,
+"years": {
+"2023": 445,
+"2024": -29,
+"2025": 32,
+"2026": -100
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H6 tom",
+"disc": {
+"n": 85,
+"mean": -243.5,
+"sd": 1507,
+"t": -1.49,
+"p": 0.9318327836241557,
+"win": 0.376,
+"sharpe": -1.12,
+"total": -20695
+},
+"hold": {
+"n": 51,
+"mean": 259.3,
+"sd": 2681,
+"t": 0.69,
+"p": 0.2448704444694589,
+"win": 0.569,
+"sharpe": 0.69,
+"total": 13225
+},
+"fwd": null,
+"years": {
+"2023": -595,
+"2024": -145,
+"2025": -317,
+"2026": 392
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H16 month_end_hour",
+"disc": {
+"n": 22,
+"mean": 18.6,
+"sd": 213,
+"t": 0.41,
+"p": 0.3409473532676157,
+"win": 0.409,
+"sharpe": 0.31,
+"total": 410
+},
+"hold": {
+"n": 12,
+"mean": 55.8,
+"sd": 211,
+"t": 0.92,
+"p": 0.17985046588879053,
+"win": 0.583,
+"sharpe": 0.96,
+"total": 670
+},
+"fwd": null,
+"years": {
+"2023": -245,
+"2024": -1,
+"2025": 47,
+"2026": 86
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "CL",
+"h": "H7b other_14to14",
+"disc": {
+"n": 424,
+"mean": -39.9,
+"sd": 1353,
+"t": -0.61,
+"p": 0.728253532170599,
+"win": 0.502,
+"sharpe": -0.46,
+"total": -16930
+},
+"hold": {
+"n": 249,
+"mean": 62.8,
+"sd": 3137,
+"t": 0.32,
+"p": 0.37614613551303466,
+"win": 0.546,
+"sharpe": 0.31,
+"total": 15625
+},
+"fwd": null,
+"years": {
+"2023": -185,
+"2024": -16,
+"2025": -82,
+"2026": 119
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "CL",
+"h": "H10 fri_reversal",
+"disc": {
+"n": 87,
+"mean": -15.3,
+"sd": 131,
+"t": -1.09,
+"p": 0.8618629338833662,
+"win": 0.437,
+"sharpe": -0.82,
+"total": -1335
+},
+"hold": {
+"n": 47,
+"mean": 34.4,
+"sd": 227,
+"t": 1.04,
+"p": 0.14949390191778272,
+"win": 0.596,
+"sharpe": 1.04,
+"total": 1615
+},
+"fwd": null,
+"years": {
+"2023": -115,
+"2024": -32,
+"2025": 5,
+"2026": 46
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H16b other_last_hour",
+"disc": {
+"n": 416,
+"mean": -24.4,
+"sd": 154,
+"t": -3.23,
+"p": 0.9993804067621642,
+"win": 0.433,
+"sharpe": -2.45,
+"total": -10140
+},
+"hold": {
+"n": 247,
+"mean": -22.0,
+"sd": 806,
+"t": -0.43,
+"p": 0.6660421508927943,
+"win": 0.53,
+"sharpe": -0.42,
+"total": -5435
+},
+"fwd": null,
+"years": {
+"2024": -16,
+"2025": -29,
+"2026": -26
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "CL",
+"h": "H11 eia_drift",
+"disc": {
+"n": 87,
+"mean": 65.5,
+"sd": 472,
+"t": 1.29,
+"p": 0.09780993528367189,
+"win": 0.54,
+"sharpe": 0.99,
+"total": 5695
+},
+"hold": {
+"n": 48,
+"mean": 70.4,
+"sd": 540,
+"t": 0.9,
+"p": 0.18322138849446556,
+"win": 0.562,
+"sharpe": 0.9,
+"total": 3380
+},
+"fwd": null,
+"years": {
+"2024": 151,
+"2025": -34,
+"2026": 93
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H5 night_up",
+"disc": {
+"n": 175,
+"mean": -112.2,
+"sd": 978,
+"t": -1.52,
+"p": 0.9354292155499506,
+"win": 0.469,
+"sharpe": -1.15,
+"total": -19635
+},
+"hold": {
+"n": 110,
+"mean": -169.6,
+"sd": 2349,
+"t": -0.76,
+"p": 0.7756159364393028,
+"win": 0.5,
+"sharpe": -0.74,
+"total": -18660
+},
+"fwd": null,
+"years": {
+"2024": 4,
+"2025": -265,
+"2026": -151
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H6b not_tom",
+"disc": {
+"n": 353,
+"mean": 0.9,
+"sd": 1291,
+"t": 0.01,
+"p": 0.49465466716282824,
+"win": 0.501,
+"sharpe": 0.01,
+"total": 325
+},
+"hold": {
+"n": 208,
+"mean": 67.3,
+"sd": 2963,
+"t": 0.33,
+"p": 0.37160257725489687,
+"win": 0.543,
+"sharpe": 0.32,
+"total": 14000
+},
+"fwd": null,
+"years": {
+"2024": 6,
+"2025": -27,
+"2026": 118
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "CL",
+"h": "H18b inside_noise",
+"disc": {
+"n": 252,
+"mean": 24.1,
+"sd": 729,
+"t": 0.53,
+"p": 0.299627586101896,
+"win": 0.54,
+"sharpe": 0.4,
+"total": 6080
+},
+"hold": {
+"n": 144,
+"mean": 202.8,
+"sd": 1221,
+"t": 1.99,
+"p": 0.023109889904435722,
+"win": 0.556,
+"sharpe": 1.97,
+"total": 29200
+},
+"fwd": null,
+"years": {
+"2024": 50,
+"2025": -5,
+"2026": 268
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "CL",
+"h": "H14b small_gap",
+"disc": {
+"n": 252,
+"mean": 21.6,
+"sd": 495,
+"t": 0.69,
+"p": 0.24423981043425855,
+"win": 0.472,
+"sharpe": 0.53,
+"total": 5440
+},
+"hold": {
+"n": 155,
+"mean": -50.5,
+"sd": 692,
+"t": -0.91,
+"p": 0.8185684170797942,
+"win": 0.426,
+"sharpe": -0.9,
+"total": -7835
+},
+"fwd": null,
+"years": {
+"2024": 28,
+"2025": 7,
+"2026": -60
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "CL",
+"h": "H18 noise_area",
+"disc": {
+"n": 173,
+"mean": -69.5,
+"sd": 908,
+"t": -1.01,
+"p": 0.842747154423888,
+"win": 0.486,
+"sharpe": -0.77,
+"total": -12015
+},
+"hold": {
+"n": 115,
+"mean": -194.0,
+"sd": 1949,
+"t": -1.07,
+"p": 0.8572053904924972,
+"win": 0.409,
+"sharpe": -1.05,
+"total": -22315
+},
+"fwd": null,
+"years": {
+"2024": -29,
+"2025": -135,
+"2026": -198
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H14 gap_fade",
+"disc": {
+"n": 167,
+"mean": -66.6,
+"sd": 518,
+"t": -1.66,
+"p": 0.9515936569084043,
+"win": 0.467,
+"sharpe": -1.28,
+"total": -11125
+},
+"hold": {
+"n": 102,
+"mean": -87.8,
+"sd": 706,
+"t": -1.26,
+"p": 0.8955855398110673,
+"win": 0.363,
+"sharpe": -1.24,
+"total": -8960
+},
+"fwd": null,
+"years": {
+"2024": -42,
+"2025": -110,
+"2026": -73
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "CL",
+"h": "H7 pre_fomc",
+"disc": {
+"n": 14,
+"mean": -256.4,
+"sd": 1542,
+"t": -0.62,
+"p": 0.7331009223347712,
+"win": 0.5,
+"sharpe": -0.49,
+"total": -3590
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": -302,
+"2025": -80,
+"2026": 1478
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "CL",
+"h": "H8b quiet_0830",
+"disc": {
+"n": 378,
+"mean": -53.8,
+"sd": 379,
+"t": -2.76,
+"p": 0.9970777284393189,
+"win": 0.431,
+"sharpe": -2.16,
+"total": -20320
+},
+"hold": {
+"n": 242,
+"mean": -75.0,
+"sd": 648,
+"t": -1.8,
+"p": 0.9641163262661046,
+"win": 0.434,
+"sharpe": -1.77,
+"total": -18150
+},
+"fwd": null,
+"years": {
+"2024": -46,
+"2025": -50,
+"2026": -96
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "CL",
+"h": "H17 overnight_hivix",
+"disc": {
+"n": 241,
+"mean": -144.0,
+"sd": 1143,
+"t": -1.96,
+"p": 0.9747820191302594,
+"win": 0.465,
+"sharpe": -1.61,
+"total": -34705
+},
+"hold": {
+"n": 128,
+"mean": -381.4,
+"sd": 3196,
+"t": -1.35,
+"p": 0.9115032448519633,
+"win": 0.43,
+"sharpe": -1.39,
+"total": -48820
+},
+"fwd": null,
+"years": {
+"2024": -148,
+"2025": -133,
+"2026": -471
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H15b other_1400",
+"disc": {
+"n": 396,
+"mean": -59.4,
+"sd": 374,
+"t": -3.16,
+"p": 0.9992052721473235,
+"win": 0.424,
+"sharpe": -2.38,
+"total": -23507
+},
+"hold": {
+"n": 227,
+"mean": -6.2,
+"sd": 332,
+"t": -0.28,
+"p": 0.6110547454474013,
+"win": 0.493,
+"sharpe": -0.28,
+"total": -1412
+},
+"fwd": null,
+"years": {
+"2023": -144,
+"2024": -50,
+"2025": -46,
+"2026": -18
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "YM",
+"h": "H9 intraday_mom",
+"disc": {
+"n": 433,
+"mean": -13.7,
+"sd": 419,
+"t": -0.68,
+"p": 0.7521392531492708,
+"win": 0.492,
+"sharpe": -0.51,
+"total": -5944
+},
+"hold": {
+"n": 256,
+"mean": -60.4,
+"sd": 322,
+"t": -3.01,
+"p": 0.9986732689866915,
+"win": 0.402,
+"sharpe": -2.96,
+"total": -15467
+},
+"fwd": null,
+"years": {
+"2023": -94,
+"2024": -17,
+"2025": -40,
+"2026": -36
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H10b other_reversal",
+"disc": {
+"n": 345,
+"mean": 18.8,
+"sd": 435,
+"t": 0.8,
+"p": 0.2117403352856843,
+"win": 0.478,
+"sharpe": 0.6,
+"total": 6472
+},
+"hold": {
+"n": 205,
+"mean": -19.5,
+"sd": 337,
+"t": -0.83,
+"p": 0.7961233345187699,
+"win": 0.478,
+"sharpe": -0.82,
+"total": -3998
+},
+"fwd": null,
+"years": {
+"2023": -160,
+"2024": -31,
+"2025": 45,
+"2026": 0
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "YM",
+"h": "H1 overnight",
+"disc": {
+"n": 433,
+"mean": -20.9,
+"sd": 1003,
+"t": -0.43,
+"p": 0.6679854456483526,
+"win": 0.51,
+"sharpe": -0.33,
+"total": -9064
+},
+"hold": {
+"n": 255,
+"mean": 127.2,
+"sd": 1261,
+"t": 1.61,
+"p": 0.053675968067328765,
+"win": 0.553,
+"sharpe": 1.58,
+"total": 32432
+},
+"fwd": null,
+"years": {
+"2023": -134,
+"2024": 23,
+"2025": -58,
+"2026": 167
+},
+"control": false,
+"verdict": "no | paper since 2026-10-17 n=0 open"
+},
+{
+"root": "YM",
+"h": "H17b overnight_lovix",
+"disc": {
+"n": 193,
+"mean": -29.9,
+"sd": 583,
+"t": -0.71,
+"p": 0.7619786671688206,
+"win": 0.503,
+"sharpe": -0.54,
+"total": -5768
+},
+"hold": {
+"n": 129,
+"mean": 40.9,
+"sd": 1060,
+"t": 0.44,
+"p": 0.3304774647127432,
+"win": 0.543,
+"sharpe": 0.43,
+"total": 5280
+},
+"fwd": null,
+"years": {
+"2023": -134,
+"2024": -32,
+"2025": -1,
+"2026": 35
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "YM",
+"h": "H2 night_asia",
+"disc": {
+"n": 427,
+"mean": 0.2,
+"sd": 555,
+"t": 0.01,
+"p": 0.49761536236829845,
+"win": 0.499,
+"sharpe": 0.0,
+"total": 68
+},
+"hold": {
+"n": 254,
+"mean": -27.0,
+"sd": 682,
+"t": -0.63,
+"p": 0.7362162823699198,
+"win": 0.52,
+"sharpe": -0.62,
+"total": -6863
+},
+"fwd": null,
+"years": {
+"2023": 130,
+"2024": 11,
+"2025": -31,
+"2026": -11
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H3 night_eu",
+"disc": {
+"n": 427,
+"mean": -33.9,
+"sd": 830,
+"t": -0.84,
+"p": 0.8006223362180027,
+"win": 0.499,
+"sharpe": -0.64,
+"total": -14482
+},
+"hold": {
+"n": 254,
+"mean": 141.5,
+"sd": 1027,
+"t": 2.2,
+"p": 0.014054929392085306,
+"win": 0.571,
+"sharpe": 2.16,
+"total": 35932
+},
+"fwd": null,
+"years": {
+"2023": -280,
+"2024": 0,
+"2025": -40,
+"2026": 163
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H5 night_up",
+"disc": {
+"n": 172,
+"mean": -40.0,
+"sd": 1063,
+"t": -0.49,
+"p": 0.6892929075834453,
+"win": 0.465,
+"sharpe": -0.37,
+"total": -6884
+},
+"hold": {
+"n": 98,
+"mean": 177.8,
+"sd": 1170,
+"t": 1.51,
+"p": 0.0661618091478454,
+"win": 0.571,
+"sharpe": 1.48,
+"total": 17429
+},
+"fwd": null,
+"years": {
+"2023": -134,
+"2024": 92,
+"2025": -129,
+"2026": 196
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H6 tom",
+"disc": {
+"n": 85,
+"mean": -221.4,
+"sd": 1827,
+"t": -1.12,
+"p": 0.8681135264149844,
+"win": 0.482,
+"sharpe": -0.84,
+"total": -18822
+},
+"hold": {
+"n": 51,
+"mean": 745.7,
+"sd": 2080,
+"t": 2.56,
+"p": 0.005233457866164828,
+"win": 0.647,
+"sharpe": 2.55,
+"total": 38030
+},
+"fwd": null,
+"years": {
+"2023": -160,
+"2024": -363,
+"2025": 31,
+"2026": 905
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H16 month_end_hour",
+"disc": {
+"n": 22,
+"mean": 153.9,
+"sd": 953,
+"t": 0.76,
+"p": 0.22429084630431345,
+"win": 0.591,
+"sharpe": 0.57,
+"total": 3386
+},
+"hold": {
+"n": 12,
+"mean": -35.8,
+"sd": 532,
+"t": -0.23,
+"p": 0.5919663422947813,
+"win": 0.333,
+"sharpe": -0.24,
+"total": -429
+},
+"fwd": null,
+"years": {
+"2023": 70,
+"2024": -28,
+"2025": 213,
+"2026": 74
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "YM",
+"h": "H7b other_14to14",
+"disc": {
+"n": 421,
+"mean": 69.9,
+"sd": 1842,
+"t": 0.78,
+"p": 0.2179272144900947,
+"win": 0.518,
+"sharpe": 0.59,
+"total": 29446
+},
+"hold": {
+"n": 247,
+"mean": 128.4,
+"sd": 2009,
+"t": 1.0,
+"p": 0.15765155618495547,
+"win": 0.518,
+"sharpe": 0.99,
+"total": 31704
+},
+"fwd": null,
+"years": {
+"2023": -450,
+"2024": 73,
+"2025": 90,
+"2026": 120
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "YM",
+"h": "H10 fri_reversal",
+"disc": {
+"n": 86,
+"mean": -7.6,
+"sd": 411,
+"t": -0.17,
+"p": 0.5679491147954471,
+"win": 0.523,
+"sharpe": -0.13,
+"total": -652
+},
+"hold": {
+"n": 50,
+"mean": -33.1,
+"sd": 271,
+"t": -0.86,
+"p": 0.8059865178564922,
+"win": 0.44,
+"sharpe": -0.86,
+"total": -1655
+},
+"fwd": null,
+"years": {
+"2023": 0,
+"2024": -52,
+"2025": 16,
+"2026": -12
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H16b other_last_hour",
+"disc": {
+"n": 413,
+"mean": -18.8,
+"sd": 502,
+"t": -0.76,
+"p": 0.7771440783387362,
+"win": 0.511,
+"sharpe": -0.58,
+"total": -7774
+},
+"hold": {
+"n": 244,
+"mean": -76.8,
+"sd": 503,
+"t": -2.39,
+"p": 0.9915071712392884,
+"win": 0.398,
+"sharpe": -2.35,
+"total": -18748
+},
+"fwd": null,
+"years": {
+"2024": -24,
+"2025": -52,
+"2026": -46
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "YM",
+"h": "H4 night_down",
+"disc": {
+"n": 165,
+"mean": -13.6,
+"sd": 922,
+"t": -0.19,
+"p": 0.5752265986520386,
+"win": 0.57,
+"sharpe": -0.14,
+"total": -2248
+},
+"hold": {
+"n": 102,
+"mean": 7.0,
+"sd": 1334,
+"t": 0.05,
+"p": 0.47896278257379665,
+"win": 0.549,
+"sharpe": 0.05,
+"total": 711
+},
+"fwd": null,
+"years": {
+"2024": 6,
+"2025": -51,
+"2026": 33
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H6b not_tom",
+"disc": {
+"n": 350,
+"mean": 159.4,
+"sd": 1944,
+"t": 1.53,
+"p": 0.06258096904824922,
+"win": 0.546,
+"sharpe": 1.16,
+"total": 55780
+},
+"hold": {
+"n": 205,
+"mean": -75.6,
+"sd": 1952,
+"t": -0.55,
+"p": 0.7105041399754219,
+"win": 0.502,
+"sharpe": -0.55,
+"total": -15508
+},
+"fwd": null,
+"years": {
+"2024": 190,
+"2025": 112,
+"2026": -130
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "YM",
+"h": "H18b inside_noise",
+"disc": {
+"n": 240,
+"mean": 55.1,
+"sd": 1163,
+"t": 0.73,
+"p": 0.23165247996197236,
+"win": 0.558,
+"sharpe": 0.56,
+"total": 13215
+},
+"hold": {
+"n": 144,
+"mean": -125.5,
+"sd": 1214,
+"t": -1.24,
+"p": 0.8927062526620639,
+"win": 0.493,
+"sharpe": -1.23,
+"total": -18078
+},
+"fwd": null,
+"years": {
+"2024": 63,
+"2025": -39,
+"2026": -74
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "YM",
+"h": "H14 gap_fade",
+"disc": {
+"n": 150,
+"mean": -2.9,
+"sd": 953,
+"t": -0.04,
+"p": 0.5150294626500513,
+"win": 0.5,
+"sharpe": -0.03,
+"total": -440
+},
+"hold": {
+"n": 105,
+"mean": 84.9,
+"sd": 1012,
+"t": 0.86,
+"p": 0.19487593098475697,
+"win": 0.495,
+"sharpe": 0.85,
+"total": 8918
+},
+"fwd": null,
+"years": {
+"2024": -70,
+"2025": 91,
+"2026": 73
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H18 noise_area",
+"disc": {
+"n": 182,
+"mean": 27.7,
+"sd": 1631,
+"t": 0.23,
+"p": 0.40938631300099027,
+"win": 0.489,
+"sharpe": 0.18,
+"total": 5041
+},
+"hold": {
+"n": 112,
+"mean": -177.8,
+"sd": 1411,
+"t": -1.33,
+"p": 0.9087686338872725,
+"win": 0.464,
+"sharpe": -1.32,
+"total": -19909
+},
+"fwd": null,
+"years": {
+"2024": -197,
+"2025": 215,
+"2026": -215
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H14b small_gap",
+"disc": {
+"n": 269,
+"mean": -63.4,
+"sd": 694,
+"t": -1.5,
+"p": 0.9328959924786753,
+"win": 0.442,
+"sharpe": -1.15,
+"total": -17050
+},
+"hold": {
+"n": 151,
+"mean": -1.1,
+"sd": 949,
+"t": -0.01,
+"p": 0.5057991819236327,
+"win": 0.517,
+"sharpe": -0.01,
+"total": -170
+},
+"fwd": null,
+"years": {
+"2024": -11,
+"2025": -120,
+"2026": 31
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "YM",
+"h": "H15 fomc_cont",
+"disc": {
+"n": 11,
+"mean": -206.3,
+"sd": 895,
+"t": -0.76,
+"p": 0.777624644767089,
+"win": 0.545,
+"sharpe": -0.6,
+"total": -2270
+},
+"hold": {
+"n": 7
+},
+"fwd": null,
+"years": {
+"2024": -424,
+"2025": 178,
+"2026": -572
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "YM",
+"h": "H7 pre_fomc",
+"disc": {
+"n": 14,
+"mean": 458.0,
+"sd": 655,
+"t": 2.62,
+"p": 0.004439676626750388,
+"win": 0.786,
+"sharpe": 2.05,
+"total": 6412
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": 382,
+"2025": 458,
+"2026": -1247
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "YM",
+"h": "H8b quiet_0830",
+"disc": {
+"n": 306,
+"mean": 11.9,
+"sd": 302,
+"t": 0.69,
+"p": 0.244709167164239,
+"win": 0.5,
+"sharpe": 0.54,
+"total": 3648
+},
+"hold": {
+"n": 225,
+"mean": -0.9,
+"sd": 385,
+"t": -0.03,
+"p": 0.5133062119140394,
+"win": 0.476,
+"sharpe": -0.03,
+"total": -192
+},
+"fwd": null,
+"years": {
+"2024": 23,
+"2025": -13,
+"2026": 15
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "YM",
+"h": "H8 news_drift",
+"disc": {
+"n": 92,
+"mean": 14.1,
+"sd": 561,
+"t": 0.24,
+"p": 0.4045080509758666,
+"win": 0.5,
+"sharpe": 0.19,
+"total": 1301
+},
+"hold": {
+"n": 29,
+"mean": -42.4,
+"sd": 519,
+"t": -0.44,
+"p": 0.6700869475068767,
+"win": 0.414,
+"sharpe": -0.45,
+"total": -1230
+},
+"fwd": null,
+"years": {
+"2024": 39,
+"2025": -13,
+"2026": -65
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "YM",
+"h": "H13 news_fade",
+"disc": {
+"n": 92,
+"mean": -43.1,
+"sd": 561,
+"t": -0.74,
+"p": 0.7695445709380406,
+"win": 0.489,
+"sharpe": -0.58,
+"total": -3969
+},
+"hold": {
+"n": 29,
+"mean": 13.4,
+"sd": 519,
+"t": 0.14,
+"p": 0.4445965762917215,
+"win": 0.552,
+"sharpe": 0.14,
+"total": 390
+},
+"fwd": {
+"n": 0
+},
+"years": {
+"2024": -68,
+"2025": -16,
+"2026": 36
+},
+"control": false,
+"verdict": "post-hoc (2026-10-17): forward n=0"
+},
+{
+"root": "YM",
+"h": "H17 overnight_hivix",
+"disc": {
+"n": 240,
+"mean": -13.7,
+"sd": 1243,
+"t": -0.17,
+"p": 0.5679378181611824,
+"win": 0.517,
+"sharpe": -0.14,
+"total": -3295
+},
+"hold": {
+"n": 126,
+"mean": 215.5,
+"sd": 1438,
+"t": 1.68,
+"p": 0.046236211695642404,
+"win": 0.563,
+"sharpe": 1.73,
+"total": 27153
+},
+"fwd": null,
+"years": {
+"2024": 72,
+"2025": -100,
+"2026": 305
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H9 intraday_mom",
+"disc": {
+"n": 425,
+"mean": -28.3,
+"sd": 85,
+"t": -6.85,
+"p": 0.9999999999964266,
+"win": 0.351,
+"sharpe": -5.17,
+"total": -12045
+},
+"hold": {
+"n": 252,
+"mean": -24.3,
+"sd": 113,
+"t": -3.43,
+"p": 0.9996930459291751,
+"win": 0.361,
+"sharpe": -3.37,
+"total": -6120
+},
+"fwd": null,
+"years": {
+"2023": 145,
+"2024": -30,
+"2025": -20,
+"2026": -33
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H10b other_reversal",
+"disc": {
+"n": 335,
+"mean": -18.8,
+"sd": 86,
+"t": -4.01,
+"p": 0.9999699633961858,
+"win": 0.376,
+"sharpe": -3.03,
+"total": -6305
+},
+"hold": {
+"n": 196,
+"mean": -30.3,
+"sd": 117,
+"t": -3.61,
+"p": 0.9998475107852658,
+"win": 0.352,
+"sharpe": -3.56,
+"total": -5940
+},
+"fwd": null,
+"years": {
+"2023": 175,
+"2024": -20,
+"2025": -23,
+"2026": -29
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NG",
+"h": "H1 overnight",
+"disc": {
+"n": 437,
+"mean": -18.2,
+"sd": 949,
+"t": -0.4,
+"p": 0.6559347372543125,
+"win": 0.49,
+"sharpe": -0.3,
+"total": -7965
+},
+"hold": {
+"n": 257,
+"mean": -82.2,
+"sd": 1369,
+"t": -0.96,
+"p": 0.832087238997914,
+"win": 0.444,
+"sharpe": -0.95,
+"total": -21115
+},
+"fwd": null,
+"years": {
+"2023": -185,
+"2024": 3,
+"2025": -59,
+"2026": -76
+},
+"control": false,
+"verdict": "no | paper since 2026-10-17 n=0 open"
+},
+{
+"root": "NG",
+"h": "H17b overnight_lovix",
+"disc": {
+"n": 196,
+"mean": -33.9,
+"sd": 770,
+"t": -0.62,
+"p": 0.7314610487804291,
+"win": 0.485,
+"sharpe": -0.47,
+"total": -6650
+},
+"hold": {
+"n": 129,
+"mean": -258.6,
+"sd": 1459,
+"t": -2.01,
+"p": 0.9779582567950198,
+"win": 0.434,
+"sharpe": -1.98,
+"total": -33365
+},
+"fwd": null,
+"years": {
+"2023": -185,
+"2024": -68,
+"2025": -79,
+"2026": -235
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NG",
+"h": "H2 night_asia",
+"disc": {
+"n": 408,
+"mean": -9.0,
+"sd": 664,
+"t": -0.27,
+"p": 0.6083238530662542,
+"win": 0.431,
+"sharpe": -0.21,
+"total": -3690
+},
+"hold": {
+"n": 235,
+"mean": -84.4,
+"sd": 1218,
+"t": -1.06,
+"p": 0.8561460058026737,
+"win": 0.413,
+"sharpe": -1.05,
+"total": -19845
+},
+"fwd": null,
+"years": {
+"2023": -225,
+"2024": 18,
+"2025": -42,
+"2026": -98
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H3 night_eu",
+"disc": {
+"n": 408,
+"mean": -26.9,
+"sd": 642,
+"t": -0.85,
+"p": 0.8014038831979915,
+"win": 0.473,
+"sharpe": -0.64,
+"total": -10980
+},
+"hold": {
+"n": 235,
+"mean": -32.4,
+"sd": 721,
+"t": -0.69,
+"p": 0.7543515658637774,
+"win": 0.447,
+"sharpe": -0.68,
+"total": -7605
+},
+"fwd": null,
+"years": {
+"2023": 15,
+"2024": -37,
+"2025": -33,
+"2026": -13
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H5 night_up",
+"disc": {
+"n": 159,
+"mean": -15.5,
+"sd": 1031,
+"t": -0.19,
+"p": 0.575212647139548,
+"win": 0.459,
+"sharpe": -0.14,
+"total": -2465
+},
+"hold": {
+"n": 97,
+"mean": -153.6,
+"sd": 1617,
+"t": -0.94,
+"p": 0.8252299219182733,
+"win": 0.515,
+"sharpe": -0.92,
+"total": -14895
+},
+"fwd": null,
+"years": {
+"2023": -185,
+"2024": 73,
+"2025": -103,
+"2026": -207
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H6 tom",
+"disc": {
+"n": 85,
+"mean": 80.4,
+"sd": 1220,
+"t": 0.61,
+"p": 0.2717122799145024,
+"win": 0.541,
+"sharpe": 0.46,
+"total": 6835
+},
+"hold": {
+"n": 51,
+"mean": -27.5,
+"sd": 1958,
+"t": -0.1,
+"p": 0.5400147999661993,
+"win": 0.588,
+"sharpe": -0.1,
+"total": -1405
+},
+"fwd": null,
+"years": {
+"2023": -365,
+"2024": -77,
+"2025": 324,
+"2026": -156
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H16 month_end_hour",
+"disc": {
+"n": 22,
+"mean": -58.6,
+"sd": 97,
+"t": -2.82,
+"p": 0.9976323205173501,
+"win": 0.273,
+"sharpe": -2.13,
+"total": -1290
+},
+"hold": {
+"n": 12,
+"mean": 33.3,
+"sd": 169,
+"t": 0.69,
+"p": 0.24660089072579752,
+"win": 0.5,
+"sharpe": 0.72,
+"total": 400
+},
+"fwd": null,
+"years": {
+"2023": 35,
+"2024": -98,
+"2025": 7,
+"2026": 19
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "NG",
+"h": "H15b other_1400",
+"disc": {
+"n": 343,
+"mean": -44.2,
+"sd": 252,
+"t": -3.25,
+"p": 0.9994226751200312,
+"win": 0.394,
+"sharpe": -2.46,
+"total": -15165
+},
+"hold": {
+"n": 205,
+"mean": -24.1,
+"sd": 221,
+"t": -1.56,
+"p": 0.9405585040405324,
+"win": 0.444,
+"sharpe": -1.54,
+"total": -4935
+},
+"fwd": null,
+"years": {
+"2023": 65,
+"2024": -28,
+"2025": -52,
+"2026": -29
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NG",
+"h": "H7b other_14to14",
+"disc": {
+"n": 424,
+"mean": -10.3,
+"sd": 1321,
+"t": -0.16,
+"p": 0.5636561669812866,
+"win": 0.486,
+"sharpe": -0.12,
+"total": -4360
+},
+"hold": {
+"n": 249,
+"mean": -16.7,
+"sd": 1782,
+"t": -0.15,
+"p": 0.5587225948776904,
+"win": 0.53,
+"sharpe": -0.15,
+"total": -4155
+},
+"fwd": null,
+"years": {
+"2023": -315,
+"2024": 27,
+"2025": -31,
+"2026": -38
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NG",
+"h": "H10 fri_reversal",
+"disc": {
+"n": 84,
+"mean": -18.2,
+"sd": 81,
+"t": -2.06,
+"p": 0.9801951146484141,
+"win": 0.369,
+"sharpe": -1.56,
+"total": -1530
+},
+"hold": {
+"n": 46,
+"mean": -7.8,
+"sd": 94,
+"t": -0.56,
+"p": 0.7139207749141765,
+"win": 0.457,
+"sharpe": -0.56,
+"total": -360
+},
+"fwd": null,
+"years": {
+"2023": 115,
+"2024": -10,
+"2025": -25,
+"2026": -10
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H16b other_last_hour",
+"disc": {
+"n": 416,
+"mean": -18.0,
+"sd": 130,
+"t": -2.82,
+"p": 0.9975656839431366,
+"win": 0.404,
+"sharpe": -2.13,
+"total": -7490
+},
+"hold": {
+"n": 246,
+"mean": -31.7,
+"sd": 183,
+"t": -2.71,
+"p": 0.9966686823864594,
+"win": 0.378,
+"sharpe": -2.67,
+"total": -7790
+},
+"fwd": null,
+"years": {
+"2024": -17,
+"2025": -28,
+"2026": -25
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NG",
+"h": "H4 night_down",
+"disc": {
+"n": 182,
+"mean": 11.6,
+"sd": 764,
+"t": 0.2,
+"p": 0.41889577020657554,
+"win": 0.516,
+"sharpe": 0.16,
+"total": 2110
+},
+"hold": {
+"n": 105,
+"mean": 72.1,
+"sd": 1293,
+"t": 0.57,
+"p": 0.28373477328509,
+"win": 0.438,
+"sharpe": 0.57,
+"total": 7575
+},
+"fwd": null,
+"years": {
+"2024": -28,
+"2025": 42,
+"2026": 98
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H6b not_tom",
+"disc": {
+"n": 353,
+"mean": -28.1,
+"sd": 1342,
+"t": -0.39,
+"p": 0.6527365219894921,
+"win": 0.487,
+"sharpe": -0.3,
+"total": -9905
+},
+"hold": {
+"n": 207,
+"mean": -24.8,
+"sd": 1878,
+"t": -0.19,
+"p": 0.5752235112583113,
+"win": 0.493,
+"sharpe": -0.19,
+"total": -5125
+},
+"fwd": null,
+"years": {
+"2024": 43,
+"2025": -105,
+"2026": -17
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NG",
+"h": "H18b inside_noise",
+"disc": {
+"n": 246,
+"mean": -99.3,
+"sd": 624,
+"t": -2.5,
+"p": 0.9937379761735332,
+"win": 0.382,
+"sharpe": -1.92,
+"total": -24430
+},
+"hold": {
+"n": 146,
+"mean": -41.7,
+"sd": 749,
+"t": -0.67,
+"p": 0.7495146954778242,
+"win": 0.459,
+"sharpe": -0.66,
+"total": -6090
+},
+"fwd": null,
+"years": {
+"2024": -74,
+"2025": -96,
+"2026": -59
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NG",
+"h": "H14 gap_fade",
+"disc": {
+"n": 153,
+"mean": -50.8,
+"sd": 314,
+"t": -2.0,
+"p": 0.9772503947126925,
+"win": 0.438,
+"sharpe": -1.55,
+"total": -7765
+},
+"hold": {
+"n": 102,
+"mean": -48.9,
+"sd": 325,
+"t": -1.52,
+"p": 0.9355951495164705,
+"win": 0.363,
+"sharpe": -1.52,
+"total": -4990
+},
+"fwd": null,
+"years": {
+"2024": -71,
+"2025": -37,
+"2026": -42
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H14b small_gap",
+"disc": {
+"n": 271,
+"mean": -10.7,
+"sd": 304,
+"t": -0.58,
+"p": 0.7190038807654822,
+"win": 0.469,
+"sharpe": -0.45,
+"total": -2905
+},
+"hold": {
+"n": 155,
+"mean": -49.3,
+"sd": 321,
+"t": -1.91,
+"p": 0.9721024320899903,
+"win": 0.445,
+"sharpe": -1.88,
+"total": -7645
+},
+"fwd": null,
+"years": {
+"2024": -35,
+"2025": -13,
+"2026": -28
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NG",
+"h": "H18 noise_area",
+"disc": {
+"n": 179,
+"mean": 37.5,
+"sd": 685,
+"t": 0.73,
+"p": 0.23186009564704207,
+"win": 0.553,
+"sharpe": 0.56,
+"total": 6715
+},
+"hold": {
+"n": 112,
+"mean": -57.1,
+"sd": 625,
+"t": -0.97,
+"p": 0.8330372155243913,
+"win": 0.464,
+"sharpe": -0.95,
+"total": -6390
+},
+"fwd": null,
+"years": {
+"2024": 38,
+"2025": -65,
+"2026": 44
+},
+"control": false,
+"verdict": "no"
+},
+{
+"root": "NG",
+"h": "H15 fomc_cont",
+"disc": {
+"n": 12,
+"mean": 42.5,
+"sd": 227,
+"t": 0.65,
+"p": 0.25849554640097416,
+"win": 0.667,
+"sharpe": 0.53,
+"total": 510
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": 23,
+"2025": -45,
+"2026": 42
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "NG",
+"h": "H7 pre_fomc",
+"disc": {
+"n": 14,
+"mean": 75.0,
+"sd": 838,
+"t": 0.33,
+"p": 0.3688810591418563,
+"win": 0.429,
+"sharpe": 0.26,
+"total": 1050
+},
+"hold": {
+"n": 8
+},
+"fwd": null,
+"years": {
+"2024": -224,
+"2025": 260,
+"2026": -540
+},
+"control": false,
+"verdict": "too few"
+},
+{
+"root": "NG",
+"h": "H8b quiet_0830",
+"disc": {
+"n": 391,
+"mean": -26.8,
+"sd": 371,
+"t": -1.43,
+"p": 0.9239580836945325,
+"win": 0.458,
+"sharpe": -1.12,
+"total": -10495
+},
+"hold": {
+"n": 252,
+"mean": -7.6,
+"sd": 376,
+"t": -0.32,
+"p": 0.6256692121574686,
+"win": 0.472,
+"sharpe": -0.32,
+"total": -1910
+},
+"fwd": null,
+"years": {
+"2024": -53,
+"2025": 1,
+"2026": -8
+},
+"control": true,
+"verdict": "control"
+},
+{
+"root": "NG",
+"h": "H17 overnight_hivix",
+"disc": {
+"n": 241,
+"mean": -5.5,
+"sd": 1075,
+"t": -0.08,
+"p": 0.5314063779521662,
+"win": 0.494,
+"sharpe": -0.06,
+"total": -1315
+},
+"hold": {
+"n": 128,
+"mean": 95.7,
+"sd": 1251,
+"t": 0.87,
+"p": 0.1934422480298375,
+"win": 0.453,
+"sharpe": 0.89,
+"total": 12250
+},
+"fwd": null,
+"years": {
+"2024": 68,
+"2025": -45,
+"2026": 88
+},
+"control": false,
+"verdict": "no"
+}
+]
+}
+}

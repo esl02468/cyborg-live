@@ -1,0 +1,250 @@
+{
+"generated": "2026-10-18 21:10:01",
+"generated_ts": 1792372201.369382,
+"host": "desk",
+"tz": "America/New_York",
+"queue": {
+"counts": {
+"done": 1479,
+"failed": 27,
+"running": 1,
+"unbuilt": 32
+},
+"running": {
+"id": 1659,
+"project": 70,
+"title": "Edge hunt (always on)",
+"job": "edge_hunt",
+"started": 1792371735.0266566
+},
+"recent": [
+{
+"id": 1658,
+"project": 58,
+"title": "NinjaTrader daily health digest",
+"job": "nt_health",
+"state": "done",
+"ended": 1792370939.6417522,
+"error": null
+},
+{
+"id": 1657,
+"project": 77,
+"title": "Site publish: ericbuilds.xyz shows the local AI (status + edges), fed by the local AI",
+"job": "site_publish",
+"state": "done",
+"ended": 1792370934.0564764,
+"error": null
+},
+{
+"id": 1656,
+"project": 8,
+"title": "Third candidate: overnight-long drift",
+"job": "overnight_wf",
+"state": "done",
+"ended": 1792370928.4552119,
+"error": null
+},
+{
+"id": 1655,
+"project": 7,
+"title": "Second candidate: AR5 under the same harness",
+"job": "ar5_wf",
+"state": "done",
+"ended": 1792370922.8869355,
+"error": null
+},
+{
+"id": 1654,
+"project": 63,
+"title": "Triage: observations -> tasks (auto / build / decide)",
+"job": "triage",
+"state": "done",
+"ended": 1792370912.3012407,
+"error": null
+},
+{
+"id": 1653,
+"project": 54,
+"title": "Full systems check (read-only)",
+"job": "system_check",
+"state": "done",
+"ended": 1792370906.6968186,
+"error": null
+},
+{
+"id": 1652,
+"project": 70,
+"title": "Edge hunt (always on)",
+"job": "edge_hunt",
+"state": "done",
+"ended": 1792370896.0677586,
+"error": null
+},
+{
+"id": 1651,
+"project": 105,
+"title": "NT 1m recorder -> long history merge (desk/data/nt -> data/nt_hist, append-only, guards)",
+"job": "nt_hist_merge",
+"state": "done",
+"ended": 1792369830.194335,
+"error": null
+},
+{
+"id": 1650,
+"project": 70,
+"title": "Edge hunt (always on)",
+"job": "edge_hunt",
+"state": "done",
+"ended": 1792369824.6094282,
+"error": null
+},
+{
+"id": 1649,
+"project": 70,
+"title": "Edge hunt (always on)",
+"job": "edge_hunt",
+"state": "done",
+"ended": 1792368621.9217987,
+"error": null
+},
+{
+"id": 1648,
+"project": 70,
+"title": "Edge hunt (always on)",
+"job": "edge_hunt",
+"state": "done",
+"ended": 1792367670.5091803,
+"error": null
+},
+{
+"id": 1647,
+"project": 71,
+"title": "Adjudicate the sweep's bug cards (second pass)",
+"job": "card_adjudicate",
+"state": "done",
+"ended": 1792366910.0290978,
+"error": null
+},
+{
+"id": 1646,
+"project": 58,
+"title": "NinjaTrader daily health digest",
+"job": "nt_health",
+"state": "done",
+"ended": 1792366856.9912474,
+"error": null
+},
+{
+"id": 1645,
+"project": 77,
+"title": "Site publish: ericbuilds.xyz shows the local AI (status + edges), fed by the local AI",
+"job": "site_publish",
+"state": "done",
+"ended": 1792366851.3853686,
+"error": null
+}
+],
+"error": null
+},
+"gpu": {
+"name": "NVIDIA GeForce RTX 5060 Ti",
+"util": 3,
+"mem_used_mb": 2170,
+"mem_total_mb": 16311,
+"temp_c": 35
+},
+"models": [],
+"usage_24h": {
+"calls": 152,
+"gen_tokens": 139107
+},
+"brain": {
+"open": 21,
+"by_class": {
+"decide": 19,
+"info": 2
+},
+"top": [
+{
+"title": "Bad for 3 checks: processes / desk app",
+"cls": "decide",
+"priority": 85,
+"source": "system_check_streak"
+},
+{
+"title": "BAD: holds / prop-trial hold file",
+"cls": "decide",
+"priority": 80,
+"source": "system_check"
+},
+{
+"title": "Standing findings in account_pickup.py: 1 stand, 0 unsure",
+"cls": "decide",
+"priority": 72,
+"source": "card_adjudicate"
+},
+{
+"title": "Standing findings in blown_accounts.py: 1 stand, 0 unsure",
+"cls": "decide",
+"priority": 72,
+"source": "card_adjudicate"
+},
+{
+"title": "Standing findings in desk_intent.py: 1 stand, 0 unsure",
+"cls": "decide",
+"priority": 72,
+"source": "card_adjudicate"
+},
+{
+"title": "Standing findings in nightly_reboot.py: 1 stand, 0 unsure",
+"cls": "decide",
+"priority": 72,
+"source": "card_adjudicate"
+},
+{
+"title": "Standing findings in prop_ownership.py: 1 stand, 0 unsure",
+"cls": "decide",
+"priority": 72,
+"source": "card_adjudicate"
+},
+{
+"title": "Standing findings in prop_trial.py: 1 stand, 0 unsure",
+"cls": "decide",
+"priority": 72,
+"source": "card_adjudicate"
+},
+{
+"title": "Standing findings in cloud_sync.py: 0 stand, 1 unsure",
+"cls": "decide",
+"priority": 50,
+"source": "card_adjudicate"
+},
+{
+"title": "Standing findings in desk_app.py: 0 stand, 1 unsure",
+"cls": "decide",
+"priority": 50,
+"source": "card_adjudicate"
+}
+]
+},
+"switches": {
+"stop": false,
+"keepbusy_off": false,
+"autopilot": true
+},
+"edge_hunt": {
+"tested": 48502619,
+"runs": 163,
+"k_passers": 47,
+"candidates": 0,
+"leads": 0,
+"updated": "2026-10-18 20:48"
+},
+"system_check": {
+"summary": "{\"counts\": {\"bad\": 2, \"warn\": 1, \"ok\": 32}}"
+},
+"nt_health": {
+"summary": "{}"
+}
+}
